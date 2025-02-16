@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Features() {
   return (
-    <div className="features-container w-full h-[500px] flex items-center justify-center px-[8rem]">
+    <div className="features-container w-full h-[500px] flex items-center justify-center px-[7rem]">
       <div className="features-inner w-full flex justify-between items-center gap-20">
         <div className="featues-left flex flex-[1] justify-center items-center relative">
           <Image
