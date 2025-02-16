@@ -5,20 +5,75 @@ export default function Features() {
   const FEATURES = useMemo(() => {
     return [
       {
-        title: "A Title Here",
+        title: "Seamless Transactions",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "Effortlessly send and receive small payments with minimal fees, making microtransactions more accessible than ever.",
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+            className="size-5"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"
+            />
+          </svg>
+        ),
       },
+
       {
-        title: "A Title Here",
+        title: "Peer-to-Peer Transfers",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "Easily send money to friends, family, or businesses without intermediaries.",
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+            className="size-5"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+            />
+          </svg>
+        ),
+      },
+
+      {
+        title: "Global Decentralized Marketplace",
+        description:
+          "Global decentralised B2B & B2C platform for merchants and the emerging digital asset economy.",
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+            className="size-5"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="m21 7.5-2.25-1.313M21 7.5v2.25m0-2.25-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3 2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75 2.25-1.313M12 21.75V19.5m0 2.25-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25"
+            />
+          </svg>
+        ),
       },
     ];
   }, []);
   return (
     <div className="features-container w-full flex items-center justify-center px-[7rem]">
-      <div className="features-inner w-full flex justify-between gap-20">
+      <div className="features-inner w-full flex justify-center flex-wrap gap-20">
         <div className="featues-left w-[600px] h-[600px] flex justify-center items-center relative">
           <Image
             className="w-[550px] object-contain absolute z-[-1] rotate-[-40deg]"
@@ -54,10 +109,11 @@ export default function Features() {
             Gimme Finance
           </p>
 
-          <div className="features-list flex flex-col gap-4">
+          <div className="features-list flex flex-col gap-6">
             {FEATURES.map((item, i) => (
               <div className="item" key={i}>
-                <div className="title font-medium text-[17px]">
+                <div className="title font-medium text-[17px] flex gap-2">
+                  <span className="text-color-3">{item.icon && item.icon}</span>
                   {item.title}
                 </div>
                 <div className="description text-color-1/80">
