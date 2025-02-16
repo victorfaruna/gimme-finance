@@ -5,7 +5,7 @@ export default function Features() {
   return (
     <div className="features-container w-full h-[500px] flex items-center justify-center px-[7rem]">
       <div className="features-inner w-full flex justify-between items-center gap-20">
-        <div className="featues-left flex flex-[1] justify-center items-center relative">
+        <div className="featues-left bg-blue-300 flex flex-[1] justify-center items-center relative">
           <Image
             className="w-[550px] object-contain absolute z-[-1] rotate-[-40deg]"
             unoptimized
