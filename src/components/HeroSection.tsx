@@ -37,7 +37,7 @@ export default function HeroSection() {
         </div>
         <div className="hero-right flex flex-[1] justify-center items-center relative">
           <Image
-            className="w-[500px] object-contain absolute z-[-1] mr-[-90px] rotate-[10deg]"
+            className="w-[500px] object-contain absolute z-[-1] mr-[-90px] rotate-[10deg] hidden"
             unoptimized
             src="/images/twirl.webp"
             width={400}
@@ -53,7 +53,7 @@ export default function HeroSection() {
             alt=""
           />
           <Image
-            className="w-[90px] object-contain absolute z-[-1] mb-[-400px] ml-[-400px]"
+            className="w-[90px] object-contain absolute z-[-1] mb-[-400px] ml-[-500px]"
             unoptimized
             src="/images/star.svg"
             width={90}
