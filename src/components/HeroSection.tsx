@@ -6,6 +6,13 @@ export default function HeroSection() {
     <div className="hero-container w-full flex items-center justify-center px-[7rem]">
       <div className="hero-inner w-full flex justify-center items-center flex-wrap gap-10">
         <div className="hero-left flex flex-1 flex-col gap-4">
+          {/* <Image
+            className="w-[400px] object-contain absolute z-[-1] blur-[100px] mt-[-100px] mr-[-250px]"
+            src="/images/grainy-shader.webp"
+            alt=""
+            width={50}
+            height={50}
+          /> */}
           <p className="text-[0.9rem] text-color-3 flex gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +30,7 @@ export default function HeroSection() {
             </svg>
             168+ universities in Nigeria
           </p>
-          <p className="text-[34px] font-bold font-radhiumz">
+          <p className="text-[36px] font-bold font-radhiumz">
             Redefining Microtransactions with Decentralized Finance.
           </p>
           <p className="text-[14px] text-color-1/80">
@@ -33,7 +40,7 @@ export default function HeroSection() {
           </p>
 
           <div className="hero-buttons">
-            <button className="px-8 py-3 rounded-full bg-color-1 text-white flex gap-2 items-center">
+            <button className="px-8 py-3 rounded-full bg-color-1 text-color-main flex gap-2 items-center">
               <span>Get started</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

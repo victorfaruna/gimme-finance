@@ -95,10 +95,10 @@ export default function Features() {
   }, []);
   return (
     <div className="features-container w-full flex items-center justify-center px-[7rem]">
-      <div className="features-inner w-full flex justify-center flex-wrap gap-20">
-        <div className="featues-left w-[600px] h-[600px] flex justify-center items-center relative">
+      <div className="features-inner w-full flex justify-center flex-wrap gap-10">
+        <div className="featues-left w-[500px] h-[500px] flex justify-center items-center relative">
           <Image
-            className="w-[550px] object-contain absolute z-[-1] rotate-[-40deg]"
+            className="w-[500px] object-contain absolute z-[-1] rotate-[-40deg]"
             unoptimized
             src="/images/twirl.webp"
             width={550}
@@ -106,7 +106,7 @@ export default function Features() {
             alt=""
           />
           <Image
-            className="w-[400px] object-contain"
+            className="w-[350px] object-contain"
             unoptimized
             src="/images/mockup-2.webp"
             width={400}
@@ -124,7 +124,7 @@ export default function Features() {
         </div>
 
         <div className="features-right flex flex-1 flex-col gap-4 pt-[50px]">
-          <p className="uppercase text-[1.1rem] font-medium tracking-[2px] text-color-3 leading-none">
+          <p className="uppercase text-[15px] font-bold tracking-[2px] text-color-3 leading-none">
             * Features
           </p>
           <p className="text-[2.5rem] font-radhiumz font-bold leading-none">
@@ -134,7 +134,7 @@ export default function Features() {
           <div className="features-list flex flex-col gap-6">
             {FEATURES.map((item, i) => (
               <div className="item" key={i}>
-                <div className="title font-medium text-[17px] flex gap-2">
+                <div className="title font-medium text-[17px] flex gap-2 items-center">
                   <span className="text-color-3">{item.icon && item.icon}</span>
                   {item.title}
                 </div>
