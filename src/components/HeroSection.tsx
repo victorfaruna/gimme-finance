@@ -23,10 +23,10 @@ export default function HeroSection() {
             </svg>
             168+ universities in Nigeria
           </p>
-          <p className="text-[2.3rem] font-bold font-radhiumz">
+          <p className="text-[34px] font-bold font-radhiumz">
             Redefining Microtransactions with Decentralized Finance.
           </p>
-          <p className="text-[1.1rem] text-color-1/80">
+          <p className="text-[14px] text-color-1/80">
             Effortless, secure, and borderless microtransactions—powered by
             blockchain. Experience the future of digital payments with a
             decentralized marketplace built for seamless transactions.
