@@ -12,5 +12,5 @@ body {
   color: rgb(var(--color-1));
   background: rgb(var(--color-main));
   font-family: var(--font-poppins);
-  font-size: 14px;
+  font-size: 12px;
 }
