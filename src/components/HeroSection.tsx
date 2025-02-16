@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <div className="hero-container w-full flex items-center justify-center px-[7rem]">
       <div className="hero-inner w-full flex justify-center items-center flex-wrap gap-10">
-        <div className="hero-left flex flex-[1] flex-col gap-4">
+        <div className="hero-left flex flex-1 flex-col gap-4">
           <p className="text-[0.9rem] text-color-3 flex gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
