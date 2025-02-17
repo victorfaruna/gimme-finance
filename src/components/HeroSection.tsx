@@ -13,7 +13,7 @@ export default function HeroSection() {
             width={50}
             height={50}
           /> */}
-          <p className="text-[14px] max-md:text-[11px] text-color-3 flex gap-2 items-center">
+          <p className="text-[14px] max-md:text-[12px] text-color-3 flex gap-2 items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
