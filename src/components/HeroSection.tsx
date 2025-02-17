@@ -4,7 +4,7 @@ import React from "react";
 export default function HeroSection() {
   return (
     <div className="hero-container w-full flex items-center justify-center px-[7rem] max-lg:px-[2rem]">
-      <div className="hero-inner w-full flex justify-center items-center flex-wrap gap-10">
+      <div className="hero-inner w-full flex justify-center items-center flex-wrap gap-10 max-lg:flex-col">
         <div className="hero-left flex flex-1 flex-col gap-4">
           {/* <Image
             className="w-[400px] object-contain absolute z-[-1] blur-[100px] mt-[-100px] mr-[-250px]"
@@ -59,7 +59,7 @@ export default function HeroSection() {
             </button>
           </div>
         </div>
-        <div className="hero-right w-[500px] flex justify-center items-center relative">
+        <div className="hero-right bg-blue-300 w-[500px] max-lg:w-[300px] flex justify-center items-center relative">
           <Image
             className="w-[500px] object-contain absolute z-[-1] mr-[-90px] rotate-[10deg] hidden"
             unoptimized
@@ -69,7 +69,7 @@ export default function HeroSection() {
             alt=""
           />
           <Image
-            className="w-[500px] object-contain"
+            className="w-[500px] max-lg:w-[250px] object-contain"
             unoptimized
             src="/images/mockup-1.webp"
             width={500}
@@ -77,7 +77,7 @@ export default function HeroSection() {
             alt=""
           />
           <Image
-            className="w-[90px] object-contain absolute mb-[-410px] ml-[-500px]"
+            className="w-[90px] max-lg:w-[40px] object-contain absolute bottom-[-10px] left-0"
             unoptimized
             src="/images/star.svg"
             width={90}

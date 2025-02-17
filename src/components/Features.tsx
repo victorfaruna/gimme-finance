@@ -95,10 +95,10 @@ export default function Features() {
   }, []);
   return (
     <div className="features-container w-full flex items-center justify-center px-[7rem] max-lg:px-[2rem]">
-      <div className="features-inner w-full flex justify-center flex-wrap gap-10 max-lg:flex-col-reverse">
-        <div className="featues-left w-[500px] h-[500px] flex justify-center items-center relative">
+      <div className="features-inner w-full flex justify-center items-center flex-wrap gap-10 max-lg:flex-col-reverse">
+        <div className="featues-left w-[500px] max-lg:w-[300px] flex justify-center items-center relative">
           <Image
-            className="w-[500px] object-contain absolute z-[-1] rotate-[-40deg]"
+            className="w-[500px] max-lg:w-[250px] object-contain absolute z-[-1] rotate-[-40deg]"
             unoptimized
             src="/images/twirl.webp"
             width={550}
@@ -106,7 +106,7 @@ export default function Features() {
             alt=""
           />
           <Image
-            className="w-[350px] object-contain"
+            className="w-[350px] max-lg:w-[180px] object-contain"
             unoptimized
             src="/images/mockup-2.webp"
             width={400}
@@ -114,7 +114,7 @@ export default function Features() {
             alt=""
           />
           <Image
-            className="w-[70px] object-contain absolute z-[-1] mt-[-400px] ml-[-500px] rotate-[20deg]"
+            className="w-[70px] max-lg:w-[40px] object-contain absolute z-[-1] top-0 left-0 rotate-[20deg]"
             unoptimized
             src="/images/star.svg"
             width={70}
