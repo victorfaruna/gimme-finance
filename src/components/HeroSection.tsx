@@ -69,7 +69,7 @@ export default function HeroSection() {
             alt=""
           />
           <Image
-            className="w-[450px] max-md:w-[250px] object-contain"
+            className="w-[450px] max-md:w-[300px] object-contain"
             unoptimized
             src="/images/mockup-1.webp"
             width={500}
@@ -77,7 +77,7 @@ export default function HeroSection() {
             alt=""
           />
           <Image
-            className="w-[70px] max-md:w-[40px] object-contain absolute bottom-[-10px] left-0"
+            className="w-[70px] max-md:hidden object-contain absolute bottom-[-10px] left-0"
             unoptimized
             src="/images/star.svg"
             width={70}
