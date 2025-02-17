@@ -95,7 +95,7 @@ export default function Features() {
   }, []);
   return (
     <div className="features-container w-full flex items-center justify-center px-[7rem] max-lg:px-[2rem]">
-      <div className="features-inner w-full flex justify-center items-center flex-wrap gap-10 max-lg:flex-col-reverse">
+      <div className="features-inner w-full flex justify-center items-center flex-wrap gap-10 max-lg:flex-col-reverse ">
         <div className="featues-left w-[500px] max-lg:w-[300px] flex justify-center items-center relative">
           <Image
             className="w-[500px] max-md:w-[250px] object-contain absolute z-[-1] rotate-[-40deg]"
@@ -134,11 +134,11 @@ export default function Features() {
           <div className="features-list flex flex-col gap-6">
             {FEATURES.map((item, i) => (
               <div className="item flex  flex-col gap-2" key={i}>
-                <div className="title font-medium text-[17px] flex gap-2 items-center">
+                <div className="title font-medium text-[17px]  max-md:text-[14px] flex gap-2 items-center">
                   <span className="text-color-3">{item.icon && item.icon}</span>
                   {item.title}
                 </div>
-                <div className="description text-[12px] text-color-1/80">
+                <div className="description text-[12px] max-md:text-[10px] text-color-1/80">
                   {item.description}
                 </div>
               </div>

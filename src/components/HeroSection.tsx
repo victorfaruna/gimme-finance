@@ -4,7 +4,7 @@ import React from "react";
 export default function HeroSection() {
   return (
     <div className="hero-container w-full flex items-center justify-center px-[7rem] max-lg:px-[2rem]">
-      <div className="hero-inner w-full flex justify-center items-center flex-wrap gap-10 max-lg:flex-col">
+      <div className="hero-inner w-full flex justify-center items-center flex-wrap gap-10 max-lg:flex-col max-lg:pt-[30px]">
         <div className="hero-left flex flex-1 flex-col gap-4">
           {/* <Image
             className="w-[400px] object-contain absolute z-[-1] blur-[100px] mt-[-100px] mr-[-250px]"
@@ -13,7 +13,7 @@ export default function HeroSection() {
             width={50}
             height={50}
           /> */}
-          <p className="text-[0.9rem] text-color-3 flex gap-2">
+          <p className="text-[14px] max-md:text-[11px] text-color-3 flex gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
