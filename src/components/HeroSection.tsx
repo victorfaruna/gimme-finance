@@ -59,7 +59,7 @@ export default function HeroSection() {
             </button>
           </div>
         </div>
-        <div className="hero-right w-[500px] max-lg:w-[300px] flex justify-center items-center relative">
+        <div className="hero-right w-[500px] max-md:w-[300px] flex justify-center items-center relative">
           <Image
             className="w-[500px] object-contain absolute z-[-1] mr-[-90px] rotate-[10deg] hidden"
             unoptimized
@@ -69,7 +69,7 @@ export default function HeroSection() {
             alt=""
           />
           <Image
-            className="w-[500px] max-lg:w-[250px] object-contain"
+            className="w-[450px] max-md:w-[250px] object-contain"
             unoptimized
             src="/images/mockup-1.webp"
             width={500}
@@ -77,11 +77,11 @@ export default function HeroSection() {
             alt=""
           />
           <Image
-            className="w-[90px] max-lg:w-[40px] object-contain absolute bottom-[-10px] left-0"
+            className="w-[70px] max-md:w-[40px] object-contain absolute bottom-[-10px] left-0"
             unoptimized
             src="/images/star.svg"
-            width={90}
-            height={90}
+            width={70}
+            height={70}
             alt=""
           />
         </div>

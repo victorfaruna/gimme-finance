@@ -98,7 +98,7 @@ export default function Features() {
       <div className="features-inner w-full flex justify-center items-center flex-wrap gap-10 max-lg:flex-col-reverse">
         <div className="featues-left w-[500px] max-lg:w-[300px] flex justify-center items-center relative">
           <Image
-            className="w-[500px] max-lg:w-[250px] object-contain absolute z-[-1] rotate-[-40deg]"
+            className="w-[500px] max-md:w-[250px] object-contain absolute z-[-1] rotate-[-40deg]"
             unoptimized
             src="/images/twirl.webp"
             width={550}
@@ -106,7 +106,7 @@ export default function Features() {
             alt=""
           />
           <Image
-            className="w-[350px] max-lg:w-[180px] object-contain"
+            className="w-[350px] max-md:w-[180px] object-contain"
             unoptimized
             src="/images/mockup-2.webp"
             width={400}
@@ -114,7 +114,7 @@ export default function Features() {
             alt=""
           />
           <Image
-            className="w-[70px] max-lg:w-[40px] object-contain absolute z-[-1] top-0 left-0 rotate-[20deg]"
+            className="w-[70px] max-md:w-[40px] object-contain absolute z-[-1] top-0 left-0 rotate-[20deg]"
             unoptimized
             src="/images/star.svg"
             width={70}
@@ -133,12 +133,12 @@ export default function Features() {
 
           <div className="features-list flex flex-col gap-6">
             {FEATURES.map((item, i) => (
-              <div className="item" key={i}>
+              <div className="item flex  flex-col gap-2" key={i}>
                 <div className="title font-medium text-[17px] flex gap-2 items-center">
                   <span className="text-color-3">{item.icon && item.icon}</span>
                   {item.title}
                 </div>
-                <div className="description text-color-1/80">
+                <div className="description text-[12px] text-color-1/80">
                   {item.description}
                 </div>
               </div>
