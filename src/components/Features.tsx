@@ -94,8 +94,8 @@ export default function Features() {
     ];
   }, []);
   return (
-    <div className="features-container w-full flex items-center justify-center px-[7rem]">
-      <div className="features-inner w-full flex justify-center flex-wrap gap-10">
+    <div className="features-container w-full flex items-center justify-center px-[7rem] max-lg:px-[2rem]">
+      <div className="features-inner w-full flex justify-center flex-wrap gap-10 max-lg:flex-col-reverse">
         <div className="featues-left w-[500px] h-[500px] flex justify-center items-center relative">
           <Image
             className="w-[500px] object-contain absolute z-[-1] rotate-[-40deg]"
@@ -127,7 +127,7 @@ export default function Features() {
           <p className="uppercase text-[15px] font-bold tracking-[2px] text-color-3 leading-none">
             * Features
           </p>
-          <p className="text-[2.5rem] font-radhiumz font-bold leading-none">
+          <p className="text-[2.5rem] max-lg:text-[1.3rem] font-radhiumz font-bold leading-none">
             Gimme Finance
           </p>
 
