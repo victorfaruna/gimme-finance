@@ -59,7 +59,7 @@ export default function HeroSection() {
             </button>
           </div>
         </div>
-        <div className="hero-right bg-blue-300 w-[500px] max-lg:w-[300px] flex justify-center items-center relative">
+        <div className="hero-right w-[500px] max-lg:w-[300px] flex justify-center items-center relative">
           <Image
             className="w-[500px] object-contain absolute z-[-1] mr-[-90px] rotate-[10deg] hidden"
             unoptimized
