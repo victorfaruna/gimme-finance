@@ -77,7 +77,7 @@ export default function HeroSection() {
             alt=""
           />
           <Image
-            className="w-[70px] max-md:hidden object-contain absolute bottom-[-10px] left-0"
+            className="w-[70px] max-md:w-[40px] object-contain absolute bottom-[-10px] left-0 max-md:bottom-[unset] max-md:left-[unset] max-md:right-[20px] max-md:top-[20px]"
             unoptimized
             src="/images/star.svg"
             width={70}
