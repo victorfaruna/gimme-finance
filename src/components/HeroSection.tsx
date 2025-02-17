@@ -30,17 +30,17 @@ export default function HeroSection() {
             </svg>
             168+ universities in Nigeria
           </p>
-          <p className="text-[36px] max-lg:text-[20px] font-bold font-radhiumz">
+          <p className="text-[36px] max-md:text-[20px] font-bold font-radhiumz">
             Redefining Microtransactions with Decentralized Finance.
           </p>
-          <p className="text-[14px] text-color-1/80">
+          <p className="text-[14px] max-md:text-[12px] text-color-1/80">
             Effortless, secure, and borderless microtransactions—powered by
             blockchain. Experience the future of digital payments with a
             decentralized marketplace built for seamless transactions.
           </p>
 
           <div className="hero-buttons">
-            <button className="px-8 py-3 rounded-full bg-color-1 text-color-main flex gap-2 items-center">
+            <button className="px-8 py-3 rounded-md bg-color-1 text-color-main flex gap-2 items-center">
               <span>Get started</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

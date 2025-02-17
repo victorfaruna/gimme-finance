@@ -131,7 +131,7 @@ export default function Features() {
             Gimme Finance
           </p>
 
-          <div className="features-list flex flex-col gap-6">
+          <div className="features-list flex flex-col gap-6 mt-4">
             {FEATURES.map((item, i) => (
               <div className="item flex  flex-col gap-2" key={i}>
                 <div className="title font-medium text-[17px]  max-md:text-[14px] flex gap-2 items-center">
