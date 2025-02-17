@@ -11,7 +11,7 @@ export default function Logo() {
         height={58}
         alt="logo"
       /> */}
-      <p className="font-bold text-[24px] text-blue-800">
+      <p className="font-bold text-[24px] text-color-3">
         G<span className="text-black">imme.</span>
       </p>
     </div>

@@ -3,7 +3,7 @@ import React from "react";
 
 export default function HeroSection() {
   return (
-    <div className="hero-container w-full flex items-center justify-center px-[7rem]">
+    <div className="hero-container w-full flex items-center justify-center px-[7rem] max-lg:px-[2rem]">
       <div className="hero-inner w-full flex justify-center items-center flex-wrap gap-10">
         <div className="hero-left flex flex-1 flex-col gap-4">
           {/* <Image
@@ -30,7 +30,7 @@ export default function HeroSection() {
             </svg>
             168+ universities in Nigeria
           </p>
-          <p className="text-[36px] font-bold font-radhiumz">
+          <p className="text-[36px] max-lg:text-[20px] font-bold font-radhiumz">
             Redefining Microtransactions with Decentralized Finance.
           </p>
           <p className="text-[14px] text-color-1/80">
@@ -59,7 +59,7 @@ export default function HeroSection() {
             </button>
           </div>
         </div>
-        <div className="hero-right w-[500px] h-[500px] flex justify-center items-center relative">
+        <div className="hero-right w-[500px] flex justify-center items-center relative">
           <Image
             className="w-[500px] object-contain absolute z-[-1] mr-[-90px] rotate-[10deg] hidden"
             unoptimized

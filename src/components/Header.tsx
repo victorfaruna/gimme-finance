@@ -4,12 +4,12 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="w-full py-[2rem] px-[7rem] flex items-center justify-between">
+    <header className="w-full py-[2rem] px-[7rem] max-lg:px-[2rem] flex items-center justify-between">
       <div className="logo w-[250px] flex justify-start">
         <Logo />
       </div>
 
-      <nav>
+      <nav className="max-lg:hidden">
         <ul className="flex items-center gap-6">
           <Link href="/" className="active">
             Home
