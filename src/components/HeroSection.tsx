@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { motion } from "motion/react";
 import React from "react";
 
 export default function HeroSection() {
@@ -28,7 +30,7 @@ export default function HeroSection() {
                 d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"
               />
             </svg>
-            168+ universities in Nigeria
+            <span>168+ universities in Nigeria</span>
           </p>
           <p className="text-[36px] max-md:text-[20px] font-bold font-radhiumz">
             Redefining Microtransactions with Decentralized Finance.
@@ -60,14 +62,29 @@ export default function HeroSection() {
           </div>
         </div>
         <div className="hero-right w-[500px] max-md:w-[300px] flex justify-center items-center relative">
-          <Image
-            className="w-[500px] object-contain absolute z-[-1] mr-[-90px] rotate-[10deg] hidden"
-            unoptimized
-            src="/images/twirl.webp"
-            width={400}
-            height={400}
-            alt=""
-          />
+          <motion.div
+            animate={{
+              rotate: [0, 10, 0],
+              scale: [1, 1.1, 1],
+              opacity: [0, 1, 0],
+            }}
+            transition={{
+              duration: 0.5,
+              ease: "easeInOut",
+              times: [0, 0.2, 1],
+              loop: Infinity,
+              repeatDelay: 0.5,
+            }}
+          >
+            <Image
+              className="w-[500px] object-contain absolute z-[-1] mr-[-90px] rotate-[10deg] hidden"
+              src="/images/twirl.webp"
+              unoptimized
+              width={400}
+              height={400}
+              alt=""
+            />
+          </motion.div>
           <Image
             className="w-[450px] max-md:w-[300px] object-contain"
             unoptimized
@@ -77,7 +94,7 @@ export default function HeroSection() {
             alt=""
           />
           <Image
-            className="w-[70px] max-md:w-[40px] object-contain absolute bottom-[-10px] left-0 max-md:bottom-[unset] max-md:left-[unset] max-md:right-[20px] max-md:top-[20px]"
+            className="w-[70px] max-md:w-[40px] object-contain absolute bottom-[-10px] left-[-30px] max-md:bottom-[unset] max-md:left-[unset] max-md:right-[20px] max-md:top-[20px]"
             unoptimized
             src="/images/star.svg"
             width={70}
