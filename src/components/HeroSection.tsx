@@ -1,9 +1,18 @@
 "use client";
 import Image from "next/image";
 import { motion } from "motion/react";
-import React from "react";
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
 
 export default function HeroSection() {
+  useEffect(() => {
+    gsap.to(".star", {
+      rotation: 360,
+      duration: 4,
+      repeat: Infinity,
+      ease: "none",
+    });
+  }, []);
   return (
     <div className="hero-container w-full flex items-center justify-center px-[7rem] max-lg:px-[2rem]">
       <div className="hero-inner w-full flex justify-center items-center flex-wrap gap-10 max-lg:flex-col max-lg:pt-[30px]">
@@ -94,7 +103,7 @@ export default function HeroSection() {
             alt=""
           />
           <Image
-            className="w-[70px] max-md:w-[40px] object-contain absolute bottom-[-10px] left-[-30px] max-md:bottom-[unset] max-md:left-[unset] max-md:right-[40px] max-md:top-[0]"
+            className="star w-[70px] max-md:w-[40px] object-contain absolute bottom-[-10px] left-[-30px] max-md:bottom-[unset] max-md:left-[unset] max-md:right-[40px] max-md:top-[0]"
             unoptimized
             src="/images/star.svg"
             width={70}

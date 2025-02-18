@@ -114,7 +114,7 @@ export default function Features() {
             alt=""
           />
           <Image
-            className="w-[70px] max-md:w-[40px] object-contain absolute z-[-1] top-0 left-0 rotate-[20deg]"
+            className="star w-[70px] max-md:w-[40px] object-contain absolute z-[-1] top-0 left-0 rotate-[20deg]"
             unoptimized
             src="/images/star.svg"
             width={70}
