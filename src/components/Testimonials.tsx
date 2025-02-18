@@ -5,19 +5,19 @@ export default function Testimonials() {
   const TESTIMONIALS = useMemo(() => {
     return [
       {
-        name: "John Doe",
+        name: "James B",
         image: "/images/user-1.webp",
-        text: "Lorem ipsum dolor sit! Sint aspernatur velit quod ea nesciunt! cupiditate voluptas laboriosam vitae ex.",
+        text: "I’ve tried other payment apps, but Gimme makes it incredibly easy to pay small amounts without hassle. The security and speed are impressive. Highly recommend!",
       },
       {
-        name: "John Doe",
-        image: "/images/user-1.webp",
-        text: "Lorem ipsum dolor sit! Sint aspernatur velit quod ea nesciunt! cupiditate voluptas laboriosam vitae ex.",
+        name: "Jumola Josph",
+        image: "/images/user-2.webp",
+        text: "I like the idea of frictionless payments, and Gimme does a good job, but I’d love to see more integrations with other apps. Keep up the good work!",
       },
       {
-        name: "John Doe",
-        image: "/images/user-1.webp",
-        text: "Lorem ipsum dolor sit! Sint aspernatur velit quod ea nesciunt! cupiditate voluptas laboriosam vitae ex.",
+        name: "Andrew Doe",
+        image: "/images/user-3.webp",
+        text: "I love how smooth the payments are. No delays, no hidden fees—just simple microtransactions that actually work. Highly recommended!",
       },
     ];
   }, []);
