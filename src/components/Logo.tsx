@@ -5,7 +5,7 @@ export default function Logo() {
   return (
     <div className="flex items-center">
       {/*  */}
-      <div className="font-bold flex text-[22px] items-center gap-[1px] text-color-3">
+      <div className="font-bold leading-none flex text-[22px] items-end gap-[1px] text-color-3">
         <Image
           className="size-[24px] object-contain"
           src={"/images/logo.svg"}
@@ -13,7 +13,7 @@ export default function Logo() {
           height={20}
           alt="logo"
         />
-        <span className="text-black">imme.</span>
+        <p className="text-black">imme.</p>
       </div>
     </div>
   );
