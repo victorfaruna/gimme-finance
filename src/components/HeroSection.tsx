@@ -7,7 +7,7 @@ export default function HeroSection() {
   return (
     <div className="hero-container w-full flex items-center justify-center px-[7rem] max-lg:px-[2rem]">
       <div className="hero-inner w-full flex justify-center items-center flex-wrap gap-10 max-lg:flex-col max-lg:pt-[30px]">
-        <div className="hero-left flex flex-1 flex-col gap-4">
+        <div className="hero-left flex flex-1 flex-col gap-4 max-sm:items-center max-sm:text-center">
           {/* <Image
             className="w-[400px] object-contain absolute z-[-1] blur-[100px] mt-[-100px] mr-[-250px]"
             src="/images/grainy-shader.webp"
@@ -15,7 +15,7 @@ export default function HeroSection() {
             width={50}
             height={50}
           /> */}
-          <p className="text-[14px] max-md:text-[12px] text-color-3 flex gap-2 items-center">
+          <p className="text-[14px] max-md:text-[11px] text-color-3 flex gap-2 items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -35,7 +35,7 @@ export default function HeroSection() {
           <p className="text-[36px] max-md:text-[20px] font-bold font-radhiumz">
             Redefining Microtransactions with Decentralized Finance.
           </p>
-          <p className="text-[14px] max-md:text-[12px] text-color-1/80">
+          <p className="text-[14px] max-md:text-[11px] text-color-1/80">
             Effortless, secure, and borderless microtransactions—powered by
             blockchain. Experience the future of digital payments with a
             decentralized marketplace built for seamless transactions.
