@@ -10,7 +10,7 @@ export default function Testimonials() {
         text: "I’ve tried other payment apps, but Gimme makes it incredibly easy to pay small amounts without hassle. The security and speed are impressive. Highly recommend!",
       },
       {
-        name: "Jumola Josph",
+        name: "Jumola Joseph",
         image: "/images/user-2.webp",
         text: "I like the idea of frictionless payments, and Gimme does a good job, but I’d love to see more integrations with other apps.",
       },
