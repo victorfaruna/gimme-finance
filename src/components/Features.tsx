@@ -106,7 +106,7 @@ export default function Features() {
             alt=""
           />
           <Image
-            className="w-[350px] max-md:w-[180px] object-contain"
+            className="w-[300px] max-md:w-[150px] object-contain"
             unoptimized
             src="/images/mockup-2.webp"
             width={400}
