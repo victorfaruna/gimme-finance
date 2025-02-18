@@ -35,7 +35,7 @@ export default function Testimonials() {
         {TESTIMONIALS.map((testimonial, index) => (
           <div
             key={index}
-            className="testimonial-card rounded-sm bg-color-main p-4 drop-shadow-lg flex flex-col gap-4 max-w-[280px] flex-[0,0,auto]"
+            className="testimonial-card rounded-sm bg-color-main p-4 drop-shadow-xl flex flex-col gap-4 w-[350px] max-sm:w-[80%] max-md:w-[270px] flex-[0,0,auto]"
           >
             <Image
               className="rounded-full object-cover size-[50px] mt-[-30px]"
@@ -47,6 +47,11 @@ export default function Testimonials() {
             <p className="text-[12px] max-md:text-[11px] text-color-1/70">
               {testimonial.text}
             </p>
+            <div>
+              <p className="text-[12px] font-medium text-color-1/90">
+                {testimonial.name}
+              </p>
+            </div>
           </div>
         ))}
       </div>
