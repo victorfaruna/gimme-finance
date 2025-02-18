@@ -31,11 +31,11 @@ export default function Testimonials() {
         <br />
         Say About Us.
       </p>
-      <div className="inner flex gap-6 justify-center flex-wrap mt-[40px]">
+      <div className="inner flex gap-6 max-sm:gap-7 justify-center flex-wrap mt-[40px]">
         {TESTIMONIALS.map((testimonial, index) => (
           <div
             key={index}
-            className="testimonial-card rounded-sm bg-color-main p-4 drop-shadow-xl flex flex-col gap-4 w-[350px] max-sm:w-full max-md:w-[270px] flex-[0,0,auto]"
+            className="testimonial-card rounded-sm bg-color-main p-4 drop-shadow-xl flex flex-col gap-4 w-[350px] max-sm:w-[95%] max-md:w-[270px] flex-[0,0,auto]"
           >
             <Image
               className="rounded-full object-cover size-[50px] mt-[-30px]"
