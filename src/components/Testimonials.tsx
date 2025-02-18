@@ -12,7 +12,7 @@ export default function Testimonials() {
       {
         name: "Jumola Josph",
         image: "/images/user-2.webp",
-        text: "I like the idea of frictionless payments, and Gimme does a good job, but I’d love to see more integrations with other apps. Keep up the good work!",
+        text: "I like the idea of frictionless payments, and Gimme does a good job, but I’d love to see more integrations with other apps.",
       },
       {
         name: "Andrew Doe",
@@ -38,7 +38,7 @@ export default function Testimonials() {
             className="testimonial-card rounded-sm bg-color-main p-4 drop-shadow-xl flex flex-col gap-4 w-[350px] max-sm:w-[95%] max-md:w-[270px] flex-[0,0,auto]"
           >
             <Image
-              className="border border-color-3 p-1 rounded-full object-cover size-[50px] mt-[-40px]"
+              className="border border-dashed border-color-3 p-1 rounded-full object-cover size-[50px] mt-[-40px]"
               src={testimonial.image}
               alt="testimonial"
               width={100}
