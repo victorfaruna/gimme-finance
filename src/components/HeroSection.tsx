@@ -86,15 +86,15 @@ export default function HeroSection() {
             />
           </motion.div>
           <Image
-            className="w-[450px] max-md:w-[300px] object-contain"
+            className="w-[480px] max-md:w-[300px] object-contain"
             unoptimized
-            src="/images/mockup-1.webp"
+            src="/images/mockup-1-new.webp"
             width={500}
             height={500}
             alt=""
           />
           <Image
-            className="w-[70px] max-md:w-[40px] object-contain absolute bottom-[-10px] left-[-30px] max-md:bottom-[unset] max-md:left-[unset] max-md:right-[20px] max-md:top-[20px]"
+            className="w-[70px] max-md:w-[40px] object-contain absolute bottom-[-10px] left-[-30px] max-md:bottom-[unset] max-md:left-[unset] max-md:right-[40px] max-md:top-[0]"
             unoptimized
             src="/images/star.svg"
             width={70}

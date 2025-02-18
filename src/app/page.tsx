@@ -4,7 +4,7 @@ import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-20">
+    <main className="flex flex-col gap-20 max-md:gap-5">
       <HeroSection />
       <Features />
       <Testimonials />
