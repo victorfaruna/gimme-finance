@@ -1,19 +1,20 @@
-// import Image from "next/image";
+import Image from "next/image";
 import React from "react";
 
 export default function Logo() {
   return (
     <div className="flex items-center">
-      {/* <Image
-        className="w-[150px] object-contain"
-        src={"/images/logo.webp"}
-        width={180}
-        height={58}
-        alt="logo"
-      /> */}
-      <p className="font-bold text-[24px] text-color-3">
-        G<span className="text-black">imme.</span>
-      </p>
+      {/*  */}
+      <div className="font-bold flex text-[22px] items-center gap-[1px] text-color-3">
+        <Image
+          className="size-[24px] object-contain"
+          src={"/images/logo.svg"}
+          width={20}
+          height={20}
+          alt="logo"
+        />
+        <span className="text-black">imme.</span>
+      </div>
     </div>
   );
 }
