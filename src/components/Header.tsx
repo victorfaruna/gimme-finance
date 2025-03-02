@@ -65,7 +65,7 @@ export default function Header() {
       <div className="buttons w-[250px] flex justify-end">
         <button
           // style={{ textShadow: " 0px 0px 10px rgba(0, 0, 0, 0.4)" }}
-          className="bg-[var(--header-button-color)] border-[1.5px] border-white/60 backdrop-blur-[5px] transition-all duration-700 hover:cursor-pointer py-[12px] px-[20px] text-[0.9rem] drop-shadow-xl rounded-md self-start text-white font-bold"
+          className="hidden lg:block bg-[var(--header-button-color)] border-[1.5px] border-white/60 backdrop-blur-[5px] transition-all duration-700 hover:cursor-pointer py-[12px] px-[20px] text-[0.9rem] drop-shadow-xl rounded-md self-start text-white font-bold"
         >
           Get Started
         </button>
