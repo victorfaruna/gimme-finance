@@ -14,6 +14,7 @@
   --font-poppins: var(--font-poppins);
   --font-playfair: var(--font-playfair);
   --font-radhiumz: var(--font-radhiumz);
+  --font-aeonik: var(--font-aeonik);
 }
 
 /*
@@ -42,14 +43,14 @@
 
 :root[data-theme="dark"] {
   --color-main: 30, 30, 30;
-  --color-1: 245, 245, 245;
+  --color-1: 255, 255, 255;
   --color-3: 106, 38, 218;
 }
 
 body {
   color: rgb(var(--color-1));
   background: rgb(var(--color-main));
-  font-family: var(--font-poppins);
+  font-family: var(--font-aeonik);
   font-size: 12px;
 }
 

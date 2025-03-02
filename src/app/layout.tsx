@@ -4,16 +4,29 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 
-const radhiumz = localFont({
-  src: "../assets/fonts/Radhiumz.ttf",
-  display: "swap",
-  variable: "--font-radhiumz",
-});
-
 const poppins = Poppins({
   variable: "--font-poppins",
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
+});
+
+const aeonik = localFont({
+  src: [
+    {
+      path: "../assets/fonts/Aeonik-Regular.otf",
+      weight: "400",
+    },
+    {
+      path: "../assets/fonts/Aeonik-Medium.otf",
+      weight: "500",
+    },
+    {
+      path: "../assets/fonts/Aeonik-Bold.otf",
+      weight: "700",
+    },
+  ],
+  display: "swap",
+  variable: "--font-aeonik",
 });
 
 const playfair = Playfair_Display({
@@ -35,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="light">
       <body
-        className={`${poppins.variable} ${playfair.variable} ${radhiumz.variable} antialiased`}
+        className={`${poppins.variable} ${playfair.variable} ${aeonik.variable} antialiased [--x-padding:6rem]`}
       >
         <Header />
         {children}

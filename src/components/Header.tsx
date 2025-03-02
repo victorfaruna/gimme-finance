@@ -1,32 +1,74 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Logo from "./Logo";
 import Link from "next/link";
+import CurrecySelector from "./CurrencySelector";
 
 export default function Header() {
+  const [headerTheme, setHeaderTheme] = useState<
+    "dark" | "light" | "transparent"
+  >("transparent");
+  const [showHeaderShadow, setShowHeaderShadow] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowHeaderShadow(true);
+      } else {
+        setShowHeaderShadow(false);
+      }
+      //...
+      if (window.scrollY > 100) {
+        setHeaderTheme("light");
+      } else {
+        setHeaderTheme("transparent");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="w-full py-[2rem] px-[7rem] max-lg:px-[2rem] flex items-center justify-between">
-      <div className="logo w-[250px] flex justify-start">
-        <Logo />
+    <header
+      className={`${
+        headerTheme === "light"
+          ? "[--header-color-main:rgb(255,255,255);--header-color-1:rgb(40,40,40);--header-bg:rgb(255,255,255,1);--header-button-color:rgb(36,103,227)]"
+          : headerTheme === "dark"
+          ? "[--header-color-main]:rgb(0,0,0);[--header-color-1]:rgb(255,255,255);--header-bg:rgb(0,0,0);--header-button-color:rgb(36,103,227)]"
+          : headerTheme === "transparent" &&
+            "[--header-color-main:rgb(255,255,255);--header-color-1:rgb(255,255,255);--header-bg:transparent;--header-button-color:rgba(0,0,0,0.05)]"
+      } ${
+        showHeaderShadow && "shadow-[0px_0px_200px_rgba(0,0,0,0.2)]"
+      }  w-full py-[1rem] px-[var(--x-padding)] fixed z-[999] max-lg:px-[2rem] flex items-center justify-between bg-[var(--header-bg)] transition-all duration-700`}
+    >
+      <div className="left w-[250px] flex items-center">
+        <div className="inner flex gap-4 items-center">
+          <div className="logo">
+            <Logo theme={headerTheme} />
+          </div>
+
+          <div className="cs">
+            <CurrecySelector />
+          </div>
+        </div>
       </div>
 
-      <nav className="max-lg:hidden">
-        <ul className="flex items-center gap-6">
-          <Link href="/" className="active">
-            Home
-          </Link>
+      <nav className="max-lg:hidden text-[var(--header-color-1)] transition-all duration-700 text-[16px] font-medium">
+        <ul className="flex items-center gap-8">
           <Link href="/about">Features</Link>
           <Link href="/about">About</Link>
           <Link href="/career">Career</Link>
-          <Link href="/contact">Contact</Link>
+          <Link href="/contact">Company</Link>
         </ul>
       </nav>
       <div className="buttons w-[250px] flex justify-end">
-        <div className="inner flex bg-black rounded-full py-[0.12rem] px-[0.1rem] max-lg:hidden">
-          <button className="px-6 py-[0.4rem] bg-color-main text-color-1 rounded-full">
-            Login
-          </button>
-          <button className="px-3 py-[0.4rem] text-color-main">Signup</button>
-        </div>
+        <button
+          // style={{ textShadow: " 0px 0px 10px rgba(0, 0, 0, 0.4)" }}
+          className="bg-[var(--header-button-color)] border-[1.5px] border-white/60 backdrop-blur-[5px] transition-all duration-700 hover:cursor-pointer py-[12px] px-[20px] text-[0.9rem] drop-shadow-xl rounded-md self-start text-white font-bold"
+        >
+          Get Started
+        </button>
 
         <div className="hamburger hidden max-lg:block">
           <button>
