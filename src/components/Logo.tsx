@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Logo({ theme }: { theme: string }) {
-  const color = { dark: "blue", light: "#fff" };
+  const color = { dark: "#374BFB", light: "#fff" };
   return (
     <div className="flex items-center gap-[1px]">
       <svg

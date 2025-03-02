@@ -58,8 +58,40 @@ export default function Header() {
         <ul className="flex items-center gap-8">
           <Link href="/about">Features</Link>
           <Link href="/about">About</Link>
-          <Link href="/career">Career</Link>
-          <Link href="/contact">Company</Link>
+          <li className="flex gap-1.5 items-center">
+            <span>Career</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="2"
+              stroke="currentColor"
+              className="size-4"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </li>
+          <li className="flex gap-1.5 items-center">
+            <span>Company</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="2"
+              stroke="currentColor"
+              className="size-4"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </li>
         </ul>
       </nav>
       <div className="buttons w-[250px] flex justify-end">
@@ -67,11 +99,11 @@ export default function Header() {
           // style={{ textShadow: " 0px 0px 10px rgba(0, 0, 0, 0.4)" }}
           className="hidden lg:block bg-[var(--header-button-color)] border-[1.5px] border-white/60 backdrop-blur-[5px] transition-all duration-700 hover:cursor-pointer py-[12px] px-[20px] text-[0.9rem] drop-shadow-xl rounded-md self-start text-white font-bold"
         >
-          Get Started
+          Get Started- <span className="font-normal">100% free</span>
         </button>
 
         <div className="hamburger hidden max-lg:block">
-          <button>
+          <button className="text-[var(--header-color-1)]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
