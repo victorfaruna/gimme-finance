@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const styles = {
   outerContainer: {
@@ -31,7 +31,7 @@ export default function HeroSection() {
         </h1>
         <p className="text-color-main/90 text-[1.1rem] font-medium mr-[20px]">
           We are the Micro-payment app that prioritizes people—individuals,
-          businesses, and stores. Paying is like saying "welcome!".
+          businesses, and stores. Paying is like saying &quit;welcome!&quot;.
         </p>
         <button
           style={{ textShadow: " 0px 0px 10px rgba(0, 0, 0, 0.4)" }}
