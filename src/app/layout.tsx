@@ -42,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="light">
       <body
-        className={`${poppins.variable} ${aeonik.variable} antialiased [--x-padding:2rem] lg:[--x-padding:6rem]`}
+        className={`${poppins.variable} ${aeonik.variable} antialiased [--x-padding:1.2rem] lg:[--x-padding:6rem]`}
       >
         <Header />
         {children}

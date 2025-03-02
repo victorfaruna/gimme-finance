@@ -33,14 +33,15 @@ export default function Header() {
     <header
       className={`${
         headerTheme === "light"
-          ? "[--header-color-main:rgb(255,255,255);--header-color-1:rgb(40,40,40);--header-bg:rgb(255,255,255,1);--header-button-color:rgb(36,103,227)]"
+          ? "[--header-color-main:rgb(255,255,255);--header-color-1:rgb(40,40,40);--header-bg:rgb(255,255,255,0.2);--header-button-color:rgb(36,103,227)]"
           : headerTheme === "dark"
           ? "[--header-color-main]:rgb(0,0,0);[--header-color-1]:rgb(255,255,255);--header-bg:rgb(0,0,0);--header-button-color:rgb(36,103,227)]"
           : headerTheme === "transparent" &&
             "[--header-color-main:rgb(255,255,255);--header-color-1:rgb(255,255,255);--header-bg:transparent;--header-button-color:rgba(0,0,0,0.05)]"
       } ${
-        showHeaderShadow && "shadow-[0px_0px_200px_rgba(0,0,0,0.2)]"
-      }  w-full py-[1rem] px-[var(--x-padding)] fixed z-[999] max-lg:px-[2rem] flex items-center justify-between bg-[var(--header-bg)] transition-all duration-700`}
+        showHeaderShadow &&
+        "shadow-[0px_0px_200px_rgba(0,0,0,0.2)] backdrop-blur-2xl"
+      }  w-full py-[0.8rem] md:py-[1rem] px-[var(--x-padding)] fixed z-[999] flex items-center justify-between bg-[var(--header-bg)] transition-all duration-700`}
     >
       <div className="left w-[250px] flex items-center">
         <div className="inner flex gap-4 items-center">
