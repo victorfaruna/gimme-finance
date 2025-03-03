@@ -3,7 +3,7 @@ import React from "react";
 export default function Logo({ theme }: { theme: string }) {
   const color = { dark: "#374BFB", light: "#fff" };
   return (
-    <div className="flex items-center gap-[1px]">
+    <div className="flex items-center gap-[1px] *:transition-all *:duration-700">
       <svg
         className="size-[2.2rem] md:size-[3rem]"
         viewBox="0 0 100 75"

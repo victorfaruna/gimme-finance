@@ -4,7 +4,7 @@ import React from "react";
 
 export default function HeroSection() {
   return (
-    <div className="outer-container w-full h-[80vh] lg:h-[98vh] [background-image:linear-gradient(151deg,_rgba(0,14,66,0.7)_4%,_rgba(0,14,66,0.1)_80%),url('/images/hero-4.webp')] bg-cover bg-no-repeat bg-[30%_bottom] lg:bg-[left_top] px-[var(--x-padding)] flex items-center relative overflow-hidden">
+    <div className="outer-container w-full h-[80vh] lg:h-[98vh] [background-image:linear-gradient(151deg,_rgba(0,14,66,0.7)_4%,_rgba(0,14,66,0.1)_80%),url('/images/hero-6.webp')] bg-cover md:[background-size:120%] bg-no-repeat bg-[10%_bottom] lg:bg-[left_top] px-[var(--x-padding)] flex items-center relative overflow-hidden">
       <div className="hero-text-container w-full lg:w-[55%] flex flex-col gap-8">
         <h1
           style={{ textShadow: "0px 0px 10px rgba(0,0,0,0.1)" }}
@@ -54,7 +54,7 @@ export default function HeroSection() {
         </div>
       </div>
       <Image
-        className="w-[2000px] lg:w-[4000px] object-cover absolute z-[199] bottom-0 right-0 max-w-none"
+        className="w-[2000px] lg:w-[4000px] object-cover absolute z-[4] bottom-0 right-0 max-w-none"
         src="/abstract/bottom-rule.svg"
         alt=""
         width={2000}

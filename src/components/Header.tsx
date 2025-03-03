@@ -41,7 +41,7 @@ export default function Header() {
       } ${
         showHeaderShadow &&
         "shadow-[0px_0px_200px_rgba(0,0,0,0.2)] backdrop-blur-2xl"
-      }  w-full py-[0.8rem] md:py-[1rem] px-[var(--x-padding)] fixed z-[999] flex items-center justify-between bg-[var(--header-bg)] transition-all duration-700`}
+      }  w-full py-[0.8rem] md:py-[1rem] px-[var(--x-padding)] fixed z-[5] flex items-center justify-between bg-[var(--header-bg)] transition-all duration-700`}
     >
       <div className="left w-[250px] flex items-center">
         <div className="inner flex gap-4 items-center">
