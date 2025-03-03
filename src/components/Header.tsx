@@ -33,7 +33,7 @@ export default function Header() {
     <header
       className={`${
         headerTheme === "light"
-          ? "[--header-color-main:rgb(255,255,255);--header-color-1:rgb(40,40,40);--header-bg:rgb(255,255,255,0.2);--header-button-color:rgb(36,103,227)]"
+          ? "[--header-color-main:rgb(255,255,255);--header-color-1:rgb(40,40,40);--header-bg:rgb(255,255,255,0.4);--header-button-color:rgb(36,103,227)]"
           : headerTheme === "dark"
           ? "[--header-color-main]:rgb(0,0,0);[--header-color-1]:rgb(255,255,255);--header-bg:rgb(0,0,0);--header-button-color:rgb(36,103,227)]"
           : headerTheme === "transparent" &&
@@ -45,9 +45,9 @@ export default function Header() {
     >
       <div className="left w-[250px] flex items-center">
         <div className="inner flex gap-4 items-center">
-          <div className="logo">
+          <Link href={"/"} className="logo">
             <Logo theme={headerTheme} />
-          </div>
+          </Link>
 
           <div className="cs">
             <CurrecySelector />

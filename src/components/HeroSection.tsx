@@ -4,7 +4,7 @@ import React from "react";
 
 export default function HeroSection() {
   return (
-    <div className="outer-container w-full h-[80vh] lg:h-[98vh] [background-image:linear-gradient(151deg,_rgba(0,0,0,0.4)_4%,_rgba(0,14,66,0.1)_80%),url('/images/hero-4.webp')] bg-cover bg-no-repeat bg-[30%_bottom] lg:bg-[left_top] px-[var(--x-padding)] flex items-center relative overflow-hidden">
+    <div className="outer-container w-full h-[80vh] lg:h-[98vh] [background-image:linear-gradient(151deg,_rgba(0,14,66,0.7)_4%,_rgba(0,14,66,0.1)_80%),url('/images/hero-4.webp')] bg-cover bg-no-repeat bg-[30%_bottom] lg:bg-[left_top] px-[var(--x-padding)] flex items-center relative overflow-hidden">
       <div className="hero-text-container w-full lg:w-[55%] flex flex-col gap-8">
         <h1
           style={{ textShadow: "0px 0px 10px rgba(0,0,0,0.1)" }}
@@ -18,7 +18,12 @@ export default function HeroSection() {
           businesses, and stores. Paying is like saying &quot;welcome!&quot;.
         </p>
         <div className="flex gap-4 items-center">
-          <button className="bg-[#2467e3fe] flex items-center hover:cursor-pointer py-[12px] lg:py-[15px] px-[20px] lg:px-[30px] text-[0.7rem] md:text-[0.9rem] rounded-xl self-start text-white font-bold">
+          <button
+            onClick={() =>
+              window.open("https://gimme.fillout.com/waitlist", "_blank")
+            }
+            className="bg-[#2467e3fe] flex items-center justify-center hover:cursor-pointer py-[12px] lg:py-[15px] px-[20px] lg:px-[30px] text-[0.7rem] md:text-[0.9rem] rounded-lg self-start text-white font-bold"
+          >
             <span>Join Our Waitlist</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -35,25 +40,14 @@ export default function HeroSection() {
               />
             </svg>
           </button>
-          <button className="bg-white/40 backdrop-blur-[5px] flex items-center justify-center gap-2 hover:cursor-pointer py-[12px] lg:py-[15px] px-[20px] lg:px-[30px] text-[0.7rem] md:text-[0.9rem] drop-shadow-xl rounded-md self-start text-gray-800 font-bold">
+          <button className="bg-white flex items-center justify-center gap-2 hover:cursor-pointer py-[12px] lg:py-[15px] px-[20px] lg:px-[30px] text-[0.7rem] md:text-[0.9rem] rounded-lg self-start text-[#2467e3fe] font-bold">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="2"
-              stroke="currentColor"
-              className="size-5 md:size-5"
+              fill="orange"
+              className="bi bi-play-circle-fill size-4 m-[3px]"
+              viewBox="0 0 16 16"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-              />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z"
-              />
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z" />
             </svg>
             Demo
           </button>
