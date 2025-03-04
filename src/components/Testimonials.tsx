@@ -22,11 +22,11 @@ export default function Testimonials() {
     ];
   }, []);
   return (
-    <div className="w-full over-x-hidden testimonials-container px-[8rem] py-[4rem] max-md:px-[2rem] max-md:py-[2rem]">
+    <div className="w-full over-x-hidden testimonials-container px-[8rem] py-[4rem] max-md:px-[2rem] max-md:py-[2rem] bg-color-main rounded-b-[1.2rem] mb-[-1rem]">
       <p className="uppercase font-radhiumz text-center text-[15px] max-md:text-[11px] text-color-1/70">
         Testimonial
       </p>
-      <p className="font-radhiumz text-[35px] max-md:text-[22px] text-center font-bold">
+      <p className="font-radhiumz text-[35px] max-md:text-[22px] text-center font-bold leading-none mb-4">
         What Our Users
         <br />
         Say About Us.

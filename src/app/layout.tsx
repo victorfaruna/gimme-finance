@@ -41,9 +41,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="light">
+    <html lang="en" data-theme="light" className="scroll-smooth">
       <body
-        className={`${poppins.variable} ${aeonik.variable} antialiased [--x-padding:1.2rem] lg:[--x-padding:6rem]`}
+        className={`${poppins.variable} ${aeonik.variable} antialiased [--x-padding:1.2rem] lg:[--x-padding:6rem] scroll-smooth`}
       >
         <Header />
         {children}

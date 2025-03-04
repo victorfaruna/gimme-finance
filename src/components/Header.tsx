@@ -57,25 +57,9 @@ export default function Header() {
 
       <nav className="max-lg:hidden text-[var(--header-color-1)] transition-all duration-700 text-[16px] font-medium">
         <ul className="flex items-center gap-8">
-          <Link href="/about">Features</Link>
+          <Link href="/#features">Features</Link>
           <Link href="/about">About</Link>
-          <li className="flex gap-1.5 items-center cursor-pointer">
-            <span>Career</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="2"
-              stroke="currentColor"
-              className="size-4"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="m19.5 8.25-7.5 7.5-7.5-7.5"
-              />
-            </svg>
-          </li>
+          <Link href="/career">Career</Link>
           <li className="flex gap-1.5 items-center cursor-pointer">
             <span>Company</span>
             <svg

@@ -15,9 +15,9 @@ export default function Home() {
           src={StarLeft}
           alt=""
         />
-        <div className="flex flex-col items-center gap-2 md:gap-0">
+        <div className="flex flex-col items-center gap-1 md:gap-0">
           <Image
-            className="w-[130px] sm:w-[170px] object-contain"
+            className="w-[110px] sm:w-[170px] object-contain"
             src="/abstract/uni-y.svg"
             alt=""
             width={500}

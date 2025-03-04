@@ -56,7 +56,7 @@ export default function RegionSelector() {
       <PopoverContent
         align="start"
         side="bottom"
-        className="w-[200px] md:w-[400px] mt-2 border-color-1/[0.05] border-[5px] rounded-[12px] lg:rounded-[15px]"
+        className="w-[200px] md:w-[400px] mt-2 border-color-1/[0.05] border-[2px] rounded-[8px] lg:rounded-[10px]"
       >
         <p className="text-[0.8rem] uppercase text-color-1/60 font-medium">
           Select your region

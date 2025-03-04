@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export default function Features() {
   return (
-    <section className="featires-container w-full px-[var(--x-padding)] flex gap-5 flex-wrap">
+    <section
+      id="features"
+      className="featires-container w-full px-[var(--x-padding)] flex gap-5 flex-wrap"
+    >
       <div className="feature-item w-full  item-1 flex flex-col md:flex-row bg-gradient-to-br from-purple-100/30 to-purple-200 rounded-[1rem] md:rounded-[3rem] overflow-hidden">
         <div className="left w-[80%] md:w-[50%] flex flex-col gap-4 [padding:40px_0_40px_40px] md:[padding:60px_0_60px_60px]">
           <p className="text-[0.8rem] md:text-[1rem] tracking-[2px] text-color-3 uppercase font-medium">
