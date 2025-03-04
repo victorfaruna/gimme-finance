@@ -16,7 +16,7 @@ export default function Home() {
           alt=""
         />
         <div className="flex flex-col gap-2 md:gap-0">
-          <p className="text-center text-[0.8rem] mx-[0.9rem] lg:text-[1.7rem] text-color-1/70 font-medium leading-none">
+          <p className="text-center text-[0.8rem] mx-[0.9rem] lg:text-[1.7rem] text-color-1/70 font-normal leading-none">
             We are building a financial inclusive world using
             {/* We're building a financially inclusive world for all. */}
           </p>
@@ -25,7 +25,7 @@ export default function Home() {
               Blockchain and Ai.
             </p>
             <Image
-              className="size-[30px] lg:size-[75px]"
+              className="size-[25px] lg:size-[50px]"
               src="/abstract/rocket-2.webp"
               width={90}
               height={90}
