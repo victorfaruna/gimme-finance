@@ -15,7 +15,14 @@ export default function Home() {
           src={StarLeft}
           alt=""
         />
-        <div className="flex flex-col gap-2 md:gap-0">
+        <div className="flex flex-col items-center gap-2 md:gap-0">
+          <Image
+            className="w-[130px] sm:w-[170px] object-contain"
+            src="/abstract/uni-y.svg"
+            alt=""
+            width={500}
+            height={300}
+          />
           <p className="text-center text-[0.8rem] mx-[0.9rem] lg:text-[1.7rem] text-color-1/70 font-normal leading-none">
             We are building a financial inclusive world using
             {/* We're building a financially inclusive world for all. */}

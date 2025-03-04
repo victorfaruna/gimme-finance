@@ -59,7 +59,7 @@ export default function Header() {
         <ul className="flex items-center gap-8">
           <Link href="/about">Features</Link>
           <Link href="/about">About</Link>
-          <li className="flex gap-1.5 items-center">
+          <li className="flex gap-1.5 items-center cursor-pointer">
             <span>Career</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@ export default function Header() {
               />
             </svg>
           </li>
-          <li className="flex gap-1.5 items-center">
+          <li className="flex gap-1.5 items-center cursor-pointer">
             <span>Company</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
