@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Logo from "./Logo";
 import Link from "next/link";
-import CurrecySelector from "./CurrencySelector";
+import RegionSelector from "./RegionSelector";
 
 export default function Header() {
   const [headerTheme, setHeaderTheme] = useState<
@@ -50,7 +50,7 @@ export default function Header() {
           </Link>
 
           <div className="cs">
-            <CurrecySelector />
+            <RegionSelector />
           </div>
         </div>
       </div>

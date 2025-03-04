@@ -4,7 +4,7 @@ import React from "react";
 
 export default function HeroSection() {
   return (
-    <div className="outer-container w-full h-[80vh] lg:h-[98vh] [background-image:linear-gradient(151deg,_rgba(0,14,66,0.7)_4%,_rgba(0,14,66,0.1)_80%),url('/images/hero-6.webp')] bg-cover md:[background-size:120%] bg-no-repeat bg-[10%_bottom] lg:bg-[left_top] px-[var(--x-padding)] flex items-center relative overflow-hidden">
+    <div className="outer-container w-full h-[80vh] lg:h-[98vh] [background-image:linear-gradient(151deg,_rgba(0,14,66,0.5)_4%,_rgba(0,14,66,0.1)_80%),url('/images/hero-6.webp')] bg-cover md:[background-size:120%] bg-no-repeat bg-[10%_bottom] lg:bg-[left_top] px-[var(--x-padding)] flex items-center relative overflow-hidden">
       <div className="hero-text-container w-full lg:w-[55%] flex flex-col gap-8">
         <h1
           style={{ textShadow: "0px 0px 10px rgba(0,0,0,0.1)" }}
@@ -40,17 +40,25 @@ export default function HeroSection() {
               />
             </svg>
           </button>
-          <button className="bg-white flex items-center justify-center gap-2 hover:cursor-pointer py-[12px] lg:py-[15px] px-[20px] lg:px-[30px] text-[0.7rem] md:text-[0.9rem] rounded-lg self-start text-[#2467e3fe] font-bold">
+        </div>
+        <div className="play-button-container flex items-center gap-2 group *:transition-all *:duration-700">
+          <button className="cursor-pointer play-button size-[50px] rounded-full border border-color-main flex items-center justify-center text-color-main group-hover:bg-color-1/80 group-hover:text-color-main/50">
             <svg
+              width="50%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              fill="orange"
-              className="bi bi-play-circle-fill size-4 m-[3px]"
-              viewBox="0 0 16 16"
             >
-              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z" />
+              <path
+                d="M4 12V8.44002C4 4.02002 7.13 2.21002 10.96 4.42002L14.05 6.20002L17.14 7.98002C20.97 10.19 20.97 13.81 17.14 16.02L14.05 17.8L10.96 19.58C7.13 21.79 4 19.98 4 15.56V12Z"
+                fill="CurrentColor"
+              ></path>
             </svg>
-            Demo
           </button>
+          <p className="text-[0.8rem] text-color-main">
+            Learn more about how <br /> Gimme works
+          </p>
         </div>
       </div>
       <Image

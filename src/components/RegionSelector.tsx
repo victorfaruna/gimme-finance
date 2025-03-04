@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/popover";
 import { useState } from "react";
 
-export default function CurrecySelector() {
+export default function RegionSelector() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <Popover
@@ -25,8 +25,8 @@ export default function CurrecySelector() {
               height={25}
             />
           </div>
-          <div className="currency-label text-[10px] md:text-[14px] font-medium font-poppins">
-            USD
+          <div className="region-label text-[10px] md:text-[14px] font-medium font-poppins">
+            EN
           </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ export default function CurrecySelector() {
         className="w-[200px] md:w-[400px] mt-2 border-color-1/[0.05] border-[5px] rounded-[12px] lg:rounded-[15px]"
       >
         <p className="text-[0.8rem] uppercase text-color-1/60 font-medium">
-          Select your currency
+          Select your region
         </p>
       </PopoverContent>
     </Popover>
