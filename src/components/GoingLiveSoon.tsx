@@ -7,7 +7,7 @@ export default function GoingLiveSoon() {
       <div className="inner bg-[grey]/5 p-[1.2rem] md:p-[5rem] flex flex-col md:flex-row gap-5 justify-center items-center rounded-[1rem]">
         <div className="left w-full lg:w-[50%] flex flex-col gap-4">
           <p className="text-[2rem] md:text-[4rem] font-bold leading-none">
-            We're going live soon...
+            We&apos;re going live soon...
           </p>
           <p className="text-[0.7rem] md:text-[1.3rem] font-medium">
             By offering a comprehensive financial system with an emphasis on
