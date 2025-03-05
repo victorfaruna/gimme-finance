@@ -63,7 +63,7 @@ export default function RegionSelector() {
         </p>
         <div>
           <p className="text-[0.8rem]">
-            Sorry we don't have any data for your region!
+            Sorry we don&apos;t have any data for your region!
           </p>
         </div>
       </PopoverContent>
