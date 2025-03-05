@@ -1,9 +1,18 @@
 import React from "react";
+import { ClassNameValue } from "tailwind-merge";
 
-export default function Logo({ theme }: { theme: string }) {
+export default function Logo({
+  theme,
+  className,
+}: {
+  theme: string;
+  className?: ClassNameValue;
+}) {
   const color = { dark: "#374BFB", light: "#fff" };
   return (
-    <div className="flex items-center gap-[1px] *:transition-all *:duration-700">
+    <div
+      className={`flex items-center gap-[1px] *:transition-all *:duration-700 ${className}`}
+    >
       <svg
         className="size-[2.2rem] md:size-[3rem]"
         viewBox="0 0 100 75"

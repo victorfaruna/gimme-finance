@@ -6,7 +6,7 @@ export default function Features() {
       id="features"
       className="featires-container w-full px-[var(--x-padding)] flex gap-5 flex-wrap"
     >
-      <div className="feature-item w-full  item-1 flex flex-col md:flex-row bg-gradient-to-br from-purple-100/30 to-purple-200 rounded-[1rem] md:rounded-[3rem] overflow-hidden">
+      <div className="feature-item w-full  item-1 flex flex-col md:flex-row bg-gradient-to-br shadow-lg shadow-color-1/[0.09] from-purple-50 to-purple-100 rounded-[1rem] md:rounded-[2rem] overflow-hidden">
         <div className="left w-[80%] md:w-[50%] flex flex-col gap-4 [padding:40px_0_40px_40px] md:[padding:60px_0_60px_60px]">
           <p className="text-[0.8rem] md:text-[1rem] tracking-[2px] text-color-3 uppercase font-medium">
             Engage
@@ -49,7 +49,7 @@ export default function Features() {
         </div>
       </div>
 
-      <div className="feature-item w-full md:w-[35%] item-2 rounded-[1rem] md:rounded-[3rem] overflow-hidden bg-red-300">
+      <div className="feature-item w-full md:w-[35%] item-2 rounded-[1rem] md:rounded-[2rem] overflow-hidden bg-red-300">
         <Image
           className="w-full h-full object-cover"
           src="/images/showcase-2.webp"
@@ -59,7 +59,7 @@ export default function Features() {
         />
       </div>
 
-      <div className="feature-item flex-[1] item-3 flex flex-col md:flex-row bg-gradient-to-br from-purple-50 to-blue-100 rounded-[1rem] md:rounded-[3rem] overflow-hidden">
+      <div className="feature-item flex-[1] item-3 flex flex-col md:flex-row bg-gradient-to-br shadow-2xl shadow-color-1/10 from-purple-50 to-blue-100 rounded-[1rem] md:rounded-[2rem] overflow-hidden">
         <div className="left w-[80%] md:w-[50%] flex flex-col gap-4 [padding:40px_0_40px_40px] md:[padding:60px_0_60px_60px]">
           <p className="text-[0.8rem] md:text-[1rem] tracking-[2px] text-color-3 uppercase font-medium">
             Level Up
@@ -102,8 +102,8 @@ export default function Features() {
       </div>
 
       <div
-        className="feature-item w-full  item-1 flex flex-col md:flex-row bg-gradient-to-br from-purple-50 to-yellow-100
-       rounded-[1rem] md:rounded-[3rem] overflow-hidden"
+        className="feature-item w-full  item-1 flex flex-col md:flex-row bg-gradient-to-br shadow-2xl shadow-color-1/10 from-purple-50 to-yellow-100
+       rounded-[1rem] md:rounded-[2rem] overflow-hidden"
       >
         <div className="left w-[80%] md:w-[60%] flex flex-col gap-4 [padding:40px_0_40px_40px] md:[padding:60px_0_60px_60px]">
           <p className="text-[0.8rem] md:text-[1rem] tracking-[2px] text-color-3 uppercase font-medium">
