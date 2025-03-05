@@ -12,11 +12,11 @@ export default function MoreFeatures() {
         payment app
       </p>
       <div className="w-full slider-container flex gap-4 overflow-x-auto whitespace-nowrap">
-        <div className="slider-item min-w-[750px] h-[500px] bg-neutral-300 rounded-lg flex-[0_0_auto]"></div>
+        <div className="slider-item min-w-[300px] md:min-w-[750px] h-[180px] md:h-[500px] bg-neutral-300 rounded-lg flex-[0_0_auto]"></div>
 
-        <div className="slider-item min-w-[750px] h-[500px] bg-neutral-300 rounded-lg flex-[0_0_auto]"></div>
+        <div className="slider-item min-w-[300px] md:min-w-[750px] h-[180px] md:h-[500px] bg-neutral-300 rounded-lg flex-[0_0_auto]"></div>
 
-        <div className="slider-item min-w-[750px] h-[500px] bg-neutral-300 rounded-lg flex-[0_0_auto]"></div>
+        <div className="slider-item min-w-[300px] md:min-w-[750px] h-[180px] md:h-[500px] bg-neutral-300 rounded-lg flex-[0_0_auto]"></div>
       </div>
     </div>
   );
