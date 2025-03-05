@@ -4,6 +4,7 @@ import Testimonials from "@/components/Testimonials";
 import StarLeft from "@/assets/images/lottie-star-left.svg";
 import StarRight from "@/assets/images/lottie-star-right.svg";
 import Image from "next/image";
+import GoingLiveSoon from "@/components/GoingLiveSoon";
 
 export default function Home() {
   return (
@@ -49,6 +50,7 @@ export default function Home() {
       </div>
       <Features />
       <Testimonials />
+      <GoingLiveSoon />
     </main>
   );
 }

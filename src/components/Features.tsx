@@ -59,7 +59,7 @@ export default function Features() {
         />
       </div>
 
-      <div className="feature-item flex-[1] item-3 flex flex-col md:flex-row bg-gradient-to-br from-purple-50 to-pink-100 rounded-[1rem] md:rounded-[3rem] overflow-hidden">
+      <div className="feature-item flex-[1] item-3 flex flex-col md:flex-row bg-gradient-to-br from-purple-50 to-blue-100 rounded-[1rem] md:rounded-[3rem] overflow-hidden">
         <div className="left w-[80%] md:w-[50%] flex flex-col gap-4 [padding:40px_0_40px_40px] md:[padding:60px_0_60px_60px]">
           <p className="text-[0.8rem] md:text-[1rem] tracking-[2px] text-color-3 uppercase font-medium">
             Level Up
@@ -105,7 +105,7 @@ export default function Features() {
         className="feature-item w-full  item-1 flex flex-col md:flex-row bg-gradient-to-br from-purple-50 to-yellow-100
        rounded-[1rem] md:rounded-[3rem] overflow-hidden"
       >
-        <div className="left w-[80%] md:w-[50%] flex flex-col gap-4 [padding:40px_0_40px_40px] md:[padding:60px_0_60px_60px]">
+        <div className="left w-[80%] md:w-[60%] flex flex-col gap-4 [padding:40px_0_40px_40px] md:[padding:60px_0_60px_60px]">
           <p className="text-[0.8rem] md:text-[1rem] tracking-[2px] text-color-3 uppercase font-medium">
             Secured
           </p>

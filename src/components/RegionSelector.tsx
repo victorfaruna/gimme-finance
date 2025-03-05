@@ -56,11 +56,16 @@ export default function RegionSelector() {
       <PopoverContent
         align="start"
         side="bottom"
-        className="w-[200px] md:w-[400px] mt-2 border-color-1/[0.05] border-[2px] rounded-[8px] lg:rounded-[10px]"
+        className="w-[200px] md:w-[400px] mt-2 border-color-1/[0.05] border-[2px] rounded-[8px] lg:rounded-[10px] flex flex-col gap-4"
       >
-        <p className="text-[0.8rem] uppercase text-color-1/60 font-medium">
+        <p className="text-[0.8rem] uppercase text-color-1/60 font-medium ">
           Select your region
         </p>
+        <div>
+          <p className="text-[0.8rem]">
+            Sorry we don't have any data for your region!
+          </p>
+        </div>
       </PopoverContent>
     </Popover>
   );

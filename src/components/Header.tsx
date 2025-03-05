@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { use, useEffect, useState } from "react";
 import Logo from "./Logo";
 import Link from "next/link";
 import RegionSelector from "./RegionSelector";
@@ -9,6 +9,21 @@ export default function Header() {
     "dark" | "light" | "transparent"
   >("transparent");
   const [showHeaderShadow, setShowHeaderShadow] = useState(false);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  const handleDrawerToggle = () => {
+    setIsDrawerOpen(!isDrawerOpen);
+  };
+
+  useEffect(() => {
+    if (isDrawerOpen) {
+      document.body.style.overflow = "hidden";
+      setHeaderTheme("light");
+    } else {
+      document.body.style.overflow = "auto";
+      setHeaderTheme("transparent");
+    }
+  }, [isDrawerOpen]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,7 +48,7 @@ export default function Header() {
     <header
       className={`${
         headerTheme === "light"
-          ? "[--header-color-main:rgb(255,255,255);--header-color-1:rgb(40,40,40);--header-bg:rgb(255,255,255,0.4);--header-button-color:rgb(36,103,227)]"
+          ? "[--header-color-main:rgb(255,255,255);--header-color-1:rgb(40,40,40);--header-bg:rgb(255,255,255,0.6);--header-button-color:rgb(36,103,227)]"
           : headerTheme === "dark"
           ? "[--header-color-main]:rgb(0,0,0);[--header-color-1]:rgb(255,255,255);--header-bg:rgb(0,0,0);--header-button-color:rgb(36,103,227)]"
           : headerTheme === "transparent" &&
@@ -41,7 +56,7 @@ export default function Header() {
       } ${
         showHeaderShadow &&
         "shadow-[0px_0px_200px_rgba(0,0,0,0.2)] backdrop-blur-2xl"
-      }  w-full py-[0.8rem] md:py-[1rem] px-[var(--x-padding)] fixed z-[5] flex items-center justify-between bg-[var(--header-bg)] transition-all duration-700`}
+      }  w-full py-[0.8rem] md:py-[1rem] px-[var(--x-padding)] fixed z-[6] flex items-center justify-between bg-[var(--header-bg)] transition-all duration-700`}
     >
       <div className="left w-[250px] flex items-center">
         <div className="inner flex gap-4 items-center">
@@ -55,8 +70,14 @@ export default function Header() {
         </div>
       </div>
 
-      <nav className="max-lg:hidden text-[var(--header-color-1)] transition-all duration-700 text-[16px] font-medium">
-        <ul className="flex items-center gap-8">
+      <nav
+        className={`${
+          isDrawerOpen
+            ? "max-lg:translate-y-0"
+            : "max-lg:translate-y-[-100%] transition-all duration-700"
+        } text-color-1 lg:text-[var(--header-color-1)] transition-all duration-700 text-[16px] font-medium  absolute lg:relative z-[-1] left-0 top-0`}
+      >
+        <ul className="flex flex-col h-screen lg:h-auto lg:flex-row p-[1rem] pt-[100px] lg:pt-0 w-screen lg:w-auto bg-color-main lg:bg-transparent items-start lg:items-center gap-8">
           <Link href="/#features">Features</Link>
           <Link href="/about">About</Link>
           <Link href="/career">Career</Link>
@@ -88,7 +109,10 @@ export default function Header() {
         </button>
 
         <div className="hamburger hidden max-lg:block">
-          <button className="text-[var(--header-color-1)]">
+          <button
+            className="text-[var(--header-color-1)]"
+            onClick={handleDrawerToggle}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -97,11 +121,19 @@ export default function Header() {
               stroke="currentColor"
               className="size-7"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 9h16.5m-16.5 6.75h16.5"
-              />
+              {!isDrawerOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 9h16.5m-16.5 6.75h16.5"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              )}
             </svg>
           </button>
         </div>
