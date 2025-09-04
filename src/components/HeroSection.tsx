@@ -4,11 +4,11 @@ import React from "react";
 
 export default function HeroSection() {
     return (
-        <div className="outer-container w-full h-[70vh] lg:h-[98vh] bg-fixed [background-image:linear-gradient(151deg,_rgba(0,0,5,0.8)_4%,_rgba(0,14,66,0.1)_80%),url('/images/hero-14.webp')] bg-cover md:[background-size:100%] bg-no-repeat bg-[center_bottom] lg:bg-[left_top] px-[var(--x-padding)] flex items-center relative overflow-hidden">
-            <div className="hero-text-container w-full lg:w-[55%] flex flex-col gap-4">
+        <div className="outer-container w-full h-[70vh] lg:h-[100vh] bg-fixed [background-image:linear-gradient(151deg,_rgba(0,0,5,0.8)_4%,_rgba(0,14,66,0.1)_80%),url('/images/hero-14.webp')] bg-cover md:[background-size:100%] bg-no-repeat bg-[center_bottom] lg:bg-[left_top] px-[var(--x-padding)] flex items-center relative overflow-hidden">
+            <div className="hero-text-container w-full lg:w-[52%] flex flex-col gap-4">
                 <h1
                     style={{ textShadow: "0px 0px 10px rgba(0,0,0,0.1)" }}
-                    className="font-clash-display pr-2 lg:pr-0 text-white text-[2rem] md:text-[3.5rem] lg:text-[4.5rem] font-semibold leading-none tracking-[-0.02em]"
+                    className="font-clash-display pr-2 lg:pr-0 text-white text-[2rem] md:text-[3.5rem] lg:text-[4rem] font-semibold leading-none tracking-[-0.02em]"
                 >
                     A financial inclusive world with everyone for everyone.
                     {/* Turn your Prepaid SIM into a Virtual Debit Card. */}
@@ -65,13 +65,13 @@ export default function HeroSection() {
                     </p>
                 </div>
             </div>
-            <Image
+            {/* <Image
                 className="w-[2000px] lg:w-[4000px] object-cover absolute z-[4] bottom-0 right-0 max-w-none"
                 src="/abstract/bottom-rule.svg"
                 alt=""
                 width={2000}
                 height={50}
-            />
+            /> */}
         </div>
     );
 }

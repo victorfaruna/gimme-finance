@@ -75,9 +75,9 @@ export default function Header() {
                     isDrawerOpen
                         ? "max-lg:translate-y-0"
                         : "max-lg:translate-y-[-100%] transition-all duration-700"
-                } text-color-1 lg:text-[var(--header-color-1)] transition-all duration-700 text-[16px] font-medium  absolute lg:relative z-[-1] left-0 top-0`}
+                } text-color-main lg:text-[var(--header-color-1)] transition-all  duration-700 text-[15px] font-medium  absolute lg:relative z-[-1] left-0 top-0`}
             >
-                <ul className="flex flex-col h-screen lg:h-auto lg:flex-row p-[1rem] pt-[100px] lg:pt-0 w-screen lg:w-auto bg-color-main lg:bg-transparent items-start lg:items-center gap-8">
+                <ul className="flex flex-col h-screen lg:h-auto lg:flex-row p-[1rem] pt-[100px] lg:pt-0 w-screen lg:w-auto bg-color-1 lg:bg-transparent items-start lg:items-center gap-8">
                     <Link href="/#features">Features</Link>
                     <Link href="/about">About</Link>
                     <Link href="/career">Career</Link>
