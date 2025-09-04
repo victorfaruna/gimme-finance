@@ -34,7 +34,7 @@ export default function HeroSection() {
                                     "_blank"
                                 )
                             }
-                            className="bg-[#2467e3fe] flex items-center justify-center hover:cursor-pointer py-[12px] lg:py-[15px] px-[20px] lg:px-[30px] text-[0.7rem] md:text-[0.9rem] rounded-lg self-start text-white font-bold"
+                            className="bg-[#2467e3fe] flex items-center font-clash-display justify-center hover:cursor-pointer py-[12px] lg:py-[15px] px-[20px] lg:px-[30px] text-[0.75rem] md:text-[0.9rem] rounded-lg self-start text-white font-medium"
                         >
                             <span>Join Our Waitlist</span>
                             <svg

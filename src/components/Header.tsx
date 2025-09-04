@@ -13,17 +13,13 @@ export default function Header() {
 
     const handleDrawerToggle = () => {
         setIsDrawerOpen(!isDrawerOpen);
-    };
-
-    useEffect(() => {
-        if (isDrawerOpen) {
+        if (!isDrawerOpen) {
             document.body.style.overflow = "hidden";
-            setHeaderTheme("light");
         } else {
             document.body.style.overflow = "auto";
             setHeaderTheme("transparent");
         }
-    }, [isDrawerOpen]);
+    };
 
     useEffect(() => {
         const handleScroll = () => {
