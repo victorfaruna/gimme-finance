@@ -4,7 +4,7 @@ import React from "react";
 
 export default function HeroSection() {
     return (
-        <div className="outer-container w-full h-[800px] lg:h-[100vh] bg-fixed [background-image:linear-gradient(151deg,_rgba(0,0,5,0.8)_4%,_rgba(0,14,66,0.1)_80%),url('/images/hero-14.webp')] bg-cover md:[background-size:100%] bg-no-repeat bg-[center_bottom] lg:bg-[left_top] px-[var(--x-padding)] flex lg:items-center pt-[7rem] pb-5 lg:pt-[0] lg:pb-0 relative overflow-hidden">
+        <div className="outer-container w-full h-[100vh] lg:h-[100vh] bg-fixed [background-image:linear-gradient(151deg,_rgba(0,0,5,0.8)_4%,_rgba(0,14,66,0.1)_80%),url('/images/hero-14.webp')] bg-cover md:[background-size:100%] bg-no-repeat bg-[center_bottom] lg:bg-[left_top] px-[var(--x-padding)] flex lg:items-center pt-[7rem] pb-5 lg:pt-[0] lg:pb-0 relative overflow-hidden">
             <div className="hero-text-container h-full lg:h-[unset] w-full lg:w-[52%] flex flex-col justify-between gap-5">
                 <div className="flex flex-col gap-5">
                     <h1
@@ -12,7 +12,7 @@ export default function HeroSection() {
                             textShadow: "0px 0px 10px rgba(0,0,0,0.1)",
                             wordSpacing: "1rem",
                         }}
-                        className="font-clash-display uppercase pr-2 lg:pr-0 text-white text-[1.5rem] md:text-[3.5rem] lg:text-[4rem] font-bold leading-none tracking-[-0.02e]"
+                        className="font-clash-display uppercase pr-2 lg:pr-0 text-white text-[1.5rem] md:text-[3rem] lg:text-[3.5rem] font-bold leading-none tracking-[-0.02e]"
                     >
                         <span className="whitespace-nowrap">
                             Micro-transactions
