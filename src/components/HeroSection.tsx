@@ -9,10 +9,10 @@ export default function HeroSection() {
                 <div className="flex flex-col gap-5">
                     <h1
                         style={{
-                            textShadow: "0px 0px 10px rgba(0,0,0,0.5)",
+                            textShadow: "0px 0px 10px rgba(0,0,0,0.1)",
                             wordSpacing: "0.8rem",
                         }}
-                        className="font-clash-display uppercase pr-2 lg:pr-0 text-white text-[2rem] md:text-[3rem] lg:text-[5rem] font-bold leading-none tracking-[-0.02e]"
+                        className="font-clash-display uppercase pr-2 lg:pr-0 text-white text-[2rem] md:text-[3rem] lg:text-[5rem] font-bold leading-none tracking-[-0.02rem]"
                     >
                         {/* <span className="whitespace-nowrap">
                             Micro-transactions
