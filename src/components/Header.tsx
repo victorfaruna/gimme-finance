@@ -42,6 +42,7 @@ export default function Header() {
 
     return (
         <header
+            suppressHydrationWarning
             className={`${
                 headerTheme === "light"
                     ? "[--header-color-main:rgb(255,255,255);--header-color-1:rgb(255,255,255);--header-bg:rgb(0,0,0,0.3);--header-button-color:rgb(36,103,227)]"
@@ -101,7 +102,7 @@ export default function Header() {
                     // style={{ textShadow: " 0px 0px 10px rgba(0, 0, 0, 0.4)" }}
                     className="hidden lg:block bg-[var(--header-button-color)] border-[1.5px] border-white/60 backdrop-blur-[5px] transition-all duration-700 hover:cursor-pointer py-[12px] px-[20px] text-[0.9rem] drop-shadow-xl rounded-md self-start text-white font-bold"
                 >
-                    Get Started- <span className="font-normal">100% free</span>
+                    Get Started - <span className="font-normal">100% free</span>
                 </button>
 
                 <div className="hamburger hidden max-lg:block">
