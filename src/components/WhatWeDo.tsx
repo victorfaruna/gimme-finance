@@ -2,13 +2,13 @@ import React from "react";
 
 const WhatWeDo = () => {
     return (
-        <div className="sticky top-[-30rem] z-[-1] w-full bg-color-1 text-color-main p-[var(--x-padding)] flex flex-col items-center gap-8">
+        <div className="w-full bg-color-1 text-color-main px-[1rem] py-[2rem] lg:px-[6rem] lg:py-[7rem] flex flex-col items-center gap-8">
             <div className="t flex flex-col gap-4">
                 <p
                     style={{
                         wordSpacing: "0.8rem",
                     }}
-                    className="text-center leading-none uppercase font-bold text-[3rem] font-clash-display"
+                    className="text-center leading-none uppercase font-bold text-[1.7rem] lg:text-[3rem] font-clash-display"
                 >
                     Built for Everyday Essential Payments
                 </p>

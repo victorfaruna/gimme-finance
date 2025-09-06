@@ -65,13 +65,17 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" data-theme="light" className="scroll-smooth">
+        <html
+            lang="en"
+            data-theme="light"
+            className="scroll-smooth"
+            suppressHydrationWarning={true}
+        >
             <body
                 className={`${poppins.variable} ${clashDisplay.variable} ${aeonik.variable} antialiased [--x-padding:1.2rem] lg:[--x-padding:6rem] scroll-smooth`}
             >
                 <Header />
                 {children}
-                <Footer />
             </body>
         </html>
     );

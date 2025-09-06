@@ -22,7 +22,7 @@ export default function Testimonials() {
         ];
     }, []);
     return (
-        <div className="sticky top-0 z-[-1] w-full over-x-hidden testimonials-container px-[8rem] py-[4rem] max-md:px-[2rem] max-md:py-[2rem] bg-color-main rounded-b-[1.2rem]">
+        <div className="sticky top-0 z-[2] w-full over-x-hidden testimonials-container px-[8rem] py-[4rem] max-md:px-[2rem] max-md:py-[2rem] bg-color-main rounded-b-[1.2rem]">
             <p className="uppercase font-radhiumz text-center text-[15px] max-md:text-[11px] text-color-1/70">
                 Testimonial
             </p>

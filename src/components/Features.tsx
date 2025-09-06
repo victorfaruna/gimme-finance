@@ -4,7 +4,7 @@ export default function Features() {
     return (
         <section
             id="features"
-            className="bg-color-main featires-container w-full px-[var(--x-padding)] py-[4rem] flex gap-5 flex-wrap "
+            className="z-[2] bg-color-main featires-container w-full px-[var(--x-padding)] py-[4rem] flex gap-5 flex-wrap "
         >
             <div className="feature-item w-full  item-1 flex flex-col md:flex-row bg-gradient-to-br shadow-lg shadow-color-1/[0.09] from-purple-50 to-purple-100 rounded-[1rem] md:rounded-[2rem] overflow-hidden">
                 <div className="left w-[80%] md:w-[50%] flex flex-col gap-4 [padding:40px_0_40px_40px] md:[padding:60px_0_60px_60px]">

@@ -1,19 +1,20 @@
-import Features from "@/components/Features";
 import HeroSection from "@/components/HeroSection";
-import Testimonials from "@/components/Testimonials";
-import GoingLiveSoon from "@/components/GoingLiveSoon";
-import MoreFeatures from "@/components/MoreFeatures";
 import WhatWeDo from "@/components/WhatWeDo";
+import Concepts from "@/components/Concepts";
+import Randit from "@/components/Randit";
+import Footer from "@/components/Footer";
 
 export default function Home() {
     return (
-        <main className="flex flex-col z-[-1]">
+        <main className="flex flex-col">
             <HeroSection />
             <WhatWeDo />
-            <Features />
-            <Testimonials />
+            <Concepts />
+            <Randit />
+            {/* <Testimonials />
             <GoingLiveSoon />
-            <MoreFeatures />
+            <MoreFeatures /> */}
+            <Footer />
         </main>
     );
 }
