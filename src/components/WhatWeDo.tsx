@@ -8,11 +8,11 @@ const WhatWeDo = () => {
                     style={{
                         wordSpacing: "0.8rem",
                     }}
-                    className="text-center leading-none uppercase font-bold text-[1.7rem] lg:text-[3rem] font-clash-display"
+                    className="text-center leading-none uppercase font-bold text-[1.5rem] lg:text-[3rem] font-clash-display"
                 >
                     Built for Everyday Essential Payments
                 </p>
-                <p className="text-[1rem] text-color-main/80 text-center">
+                <p className="text-[0.8rem] lg:text-[1rem] text-color-main/80 text-center">
                     We are building a financial inclusive world with everyone,
                     for everyone using blockchain and Ai.
                 </p>
@@ -47,7 +47,7 @@ const WhatWeDo = () => {
                     </button>
                 </div>
             </div>
-            <div className="w-[90%] bg-color-main/30 rounded-[2rem] h-[70vh] overflow-hidden">
+            <div className="w-[90%] bg-color-main/30 rounded-[1rem] lg:rounded-[2rem] h-[70vh] overflow-hidden">
                 <iframe
                     src="https://www.youtube.com/embed/ReANUqdjeP4?t=5"
                     title="Gimme app demo"

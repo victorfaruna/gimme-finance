@@ -42,13 +42,13 @@ const Concepts = () => {
     return (
         <div className="w-screen drop-shadow-2xl overflow-hidden bg-color-main px-[1rem] py-[2rem] lg:px-[6rem] lg:py-[7rem] pb-[10rem] flex flex-col lg:flex-row gap-10 items-center justify-between">
             <div className="left flex flex-col gap-4">
-                <p className="w-full lg:w-[500px] text-[2.5rem] lg:text-[4rem] leading-none uppercase font-clash-display font-bold">
+                <p className="w-full lg:w-[500px] text-[2rem] lg:text-[4rem] leading-none uppercase font-clash-display font-bold">
                     Enabling Cross Border Payments
                 </p>
                 <div className="buttons flex gap-3">
                     <button
                         ref={prevRef}
-                        className="cursor-pointer size-[3rem] lg:size-[4rem] rounded-full border border-color-1 flex items-center justify-center"
+                        className="cursor-pointer size-[3rem] lg:size-[4rem] rounded-full border-[0.5px] lg:border border-color-1 flex items-center justify-center"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +67,7 @@ const Concepts = () => {
                     </button>
                     <button
                         ref={nextRef}
-                        className="cursor-pointer size-[3rem] lg:size-[4rem] rounded-full border border-color-1 flex items-center justify-center"
+                        className="cursor-pointer size-[3rem] lg:size-[4rem] rounded-full border-[0.5px] lg:border border-color-1 flex items-center justify-center"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -138,10 +138,10 @@ const Concepts = () => {
                         <SwiperSlide key={index}>
                             <div className="item w-full bg-color-3/5 rounded-[2rem] p-[1.5rem] lg:p-[2.5rem] flex flex-col gap-5">
                                 <div className="">
-                                    <p className="text-[2rem] font-bold font-clash-display">
+                                    <p className="text-[1.5rem] lg:text-[2rem] font-bold font-clash-display">
                                         {item.title}
                                     </p>
-                                    <p className="text-[1rem] text-color-1/70">
+                                    <p className="text-[0.7rem] lg:text-[1rem] text-color-1/70">
                                         {item.description}
                                     </p>
                                 </div>
