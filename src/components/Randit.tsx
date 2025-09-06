@@ -6,7 +6,7 @@ const Randit = () => {
     return (
         <div className="w-screen relative bg-color-main">
             <div className="wrapper relative z-[3] w-full h-full p-[2rem] lg:p-[8rem] ">
-                <div className="inner bg-color-main rounded-[1.5rem] lg:rounded-[2.5rem] h-full flex flex-col gap-5 items-center p-[1rem] lg:p-[4rem]">
+                <div className="inner bg-color-main rounded-[1.5rem] lg:rounded-[2.5rem] h-full flex flex-col gap-5 items-center p-[1rem] sm:p-[4rem] lg:p-[6rem]">
                     <p className="font-bold text-[2rem] lg:text-[5rem] text-color-1/80  text-center font-clash-display w-[80%] leading-none">
                         Get the app for seamless payments
                     </p>

@@ -6,14 +6,12 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
     return (
-        <main className="flex flex-col">
+        <main>
             <HeroSection />
             <WhatWeDo />
             <Concepts />
             <Randit />
-            {/* <Testimonials />
-            <GoingLiveSoon />
-            <MoreFeatures /> */}
+
             <Footer />
         </main>
     );
