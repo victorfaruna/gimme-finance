@@ -3,7 +3,7 @@ import Logo from "./Logo";
 
 export default function Footer() {
     return (
-        <footer className="z-[5] bg-black  px-10 md:px-20 text-color-main/80 text-[0.8rem] md:text-[1rem]">
+        <footer className="z-[5] bg-black  px-10 md:px-20 text-color-main/80 text-[0.8rem] md:text-[1rem] font-clash-display">
             <div className="py-[3rem] md:py-[7rem]">
                 <p className="font-bold text-[1.5rem] md:text-[3rem] text-center leading-none text-color-main">
                     Get financial simplicity <br />

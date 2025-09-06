@@ -25,8 +25,10 @@ const Header = () => {
         const handleScroll = () => {
             if (!ticking) {
                 window.requestAnimationFrame(() => {
-                    if (window.scrollY > 100) {
+                    if (window.scrollY > 100 && headerTheme === "transparent") {
                         setHeaderTheme("light");
+                    } else {
+                        setHeaderTheme("transparent");
                     }
 
                     ticking = false;

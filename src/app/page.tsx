@@ -3,6 +3,7 @@ import WhatWeDo from "@/components/WhatWeDo";
 import Concepts from "@/components/Concepts";
 import Randit from "@/components/Randit";
 import Footer from "@/components/Footer";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
     return (
@@ -11,7 +12,7 @@ export default function Home() {
             <WhatWeDo />
             <Concepts />
             <Randit />
-
+            <Testimonials />
             <Footer />
         </main>
     );
