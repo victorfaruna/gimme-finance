@@ -2,7 +2,7 @@
 import React from "react";
 import { QRCode } from "react-qrcode-logo";
 
-const Randit = React.memo(() => {
+const Randit = () => {
     return (
         <div className="w-screen relative bg-color-main h-screen">
             <div className="wrapper relative z-[3] w-full h-full p-[2rem] lg:p-[8rem] ">
@@ -66,6 +66,6 @@ const Randit = React.memo(() => {
             </video>
         </div>
     );
-});
+};
 
-export default Randit;
+export default React.memo(Randit);
