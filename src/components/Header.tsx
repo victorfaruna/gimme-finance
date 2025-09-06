@@ -74,6 +74,8 @@ const Header = () => {
                     <Link href="/#features">Features</Link>
                     <Link href="/about">About</Link>
                     <Link href="/career">Career</Link>
+                    <Link href="/merchant">Merchant</Link>
+
                     <li className="flex gap-1.5 items-center cursor-pointer">
                         <span>Company</span>
                         <svg
