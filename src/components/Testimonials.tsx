@@ -97,7 +97,7 @@ const Testimonials = () => {
                 >
                     {TESTIMONIALS.map((testimonial, index) => (
                         <SwiperSlide key={index}>
-                            <div className="w-full flex flex-col gap-2 testimonial-card rounded-[2.5rem] bg-color-1/2 p-[2rem]">
+                            <div className="w-full flex flex-col gap-2 testimonial-card rounded-[2.5rem] bg-color-1/3 p-[2rem]">
                                 <Image
                                     className="border size-[3rem] p-[0.5rem] border-dashed border-color-3/30 rounded-full"
                                     src={testimonial.image}

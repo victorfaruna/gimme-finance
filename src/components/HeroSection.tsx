@@ -18,7 +18,7 @@ export default function HeroSection() {
                         <span className="whitespace-nowrap">
                             Micro-transactions
                         </span> */}
-                        Send faster, Trade&nbsp;smarter.
+                        Send&nbsp;faster, Trade&nbsp;smarter.
                     </h1>
                     <p className="text-color-main/90 text-[0.9rem] md:text-[1.1rem] font-medium [text-shadow:0px_0px_10px_rgba(0,0,0,0.4)]">
                         We are the Micro-payment app that prioritizes

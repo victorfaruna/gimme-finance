@@ -40,7 +40,7 @@ const Concepts = () => {
     const prevRef = useRef<HTMLButtonElement | null>(null);
     const nextRef = useRef<HTMLButtonElement | null>(null);
     return (
-        <div className="w-screen drop-shadow-2xl overflow-hidden bg-color-main px-[1rem] py-[2rem] lg:px-[6rem] lg:py-[7rem] pb-[10rem] flex flex-col lg:flex-row gap-10 items-center justify-between">
+        <div className="w-screen drop-shadow-2xl overflow-hidden bg-color-main px-[1rem] py-[2rem] lg:px-[6rem] lg:py-[7rem] pb-[4.5rem] lg:pb-[10rem] flex flex-col lg:flex-row gap-10 items-center justify-between">
             <div className="left flex flex-col gap-4">
                 <p className="w-full lg:w-[500px] text-[2rem] lg:text-[4rem] leading-none uppercase font-clash-display font-bold">
                     Enabling Cross Border Payments
