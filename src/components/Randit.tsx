@@ -1,11 +1,10 @@
-"use client";
 import React from "react";
-import { QRCode } from "react-qrcode-logo";
+import DownloadQR from "./DownloadQR";
 
 const Randit = () => {
     return (
         <div className="w-screen relative bg-color-main">
-            <div className="wrapper relative z-[3] w-full h-full p-[2rem] lg:p-[8rem] ">
+            <div className="wrapper relative z-[1] w-full h-full p-[2rem] lg:p-[8rem] ">
                 <div className="inner bg-color-main rounded-[1.5rem] lg:rounded-[2.5rem] h-full flex flex-col gap-5 items-center p-[1rem] sm:p-[4rem] lg:p-[6rem]">
                     <p className="font-bold text-[2rem] lg:text-[5rem] text-color-1/80  text-center font-clash-display w-[80%] leading-none">
                         Get the app for seamless payments
@@ -41,25 +40,21 @@ const Randit = () => {
                             <p className="text-[1rem]">Play store</p>
                         </button>
                     </div>
-                    <QRCode
-                        qrStyle="dots"
-                        logoImage="/logos/logo-black.svg"
-                        logoPaddingStyle="square"
-                        logoWidth={35}
-                        logoHeight={32}
-                        logoPadding={10}
-                        logoPaddingRadius={10}
-                        size={200}
-                        eyeRadius={10}
-                        value="https://gimme.finance"
-                    />
+                    <DownloadQR />
                 </div>
             </div>
             <video
                 autoPlay
                 muted
+                playsInline
+                style={{
+                    pointerEvents: "none",
+                    backfaceVisibility: "hidden",
+                    maskImage: "-webkit-radial-gradient(center, white, black)",
+                }}
+                tabIndex={0}
                 loop
-                className="w-full h-full object-cover z-[2] absolute top-0"
+                className="w-full h-full object-cover z-[0] absolute top-0"
             >
                 <source src="/videos/vide.webm" type="video/webm" />
                 <source src="/videos/videm.mp4" type="video/mp4" />

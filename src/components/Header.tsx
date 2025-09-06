@@ -4,11 +4,10 @@ import Logo from "./Logo";
 import Link from "next/link";
 import RegionSelector from "./RegionSelector";
 
-export default function Header() {
-    const [headerTheme, setHeaderTheme] = useState<
-        "dark" | "light" | "transparent"
-    >("transparent");
-    const [showHeaderShadow, setShowHeaderShadow] = useState(false);
+const Header = () => {
+    const [headerTheme, setHeaderTheme] = useState<"light" | "transparent">(
+        "transparent"
+    );
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
     const handleDrawerToggle = () => {
@@ -20,19 +19,19 @@ export default function Header() {
             setHeaderTheme("transparent");
         }
     };
-
     useEffect(() => {
+        let ticking = false;
+
         const handleScroll = () => {
-            if (window.scrollY > 300) {
-                setShowHeaderShadow(true);
-            } else {
-                setShowHeaderShadow(false);
-            }
-            //...
-            if (window.scrollY > 100) {
-                setHeaderTheme("light");
-            } else {
-                setHeaderTheme("transparent");
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    if (window.scrollY > 100) {
+                        setHeaderTheme("light");
+                    }
+
+                    ticking = false;
+                });
+                ticking = true;
             }
         };
 
@@ -45,14 +44,9 @@ export default function Header() {
             suppressHydrationWarning
             className={`${
                 headerTheme === "light"
-                    ? "[--header-color-main:rgb(255,255,255);--header-color-1:rgb(255,255,255);--header-bg:rgb(0,0,0,0.3);--header-button-color:rgb(36,103,227)]"
-                    : headerTheme === "dark"
-                    ? "[--header-color-main]:rgb(0,0,0);[--header-color-1]:rgb(255,255,255);--header-bg:rgb(0,0,0);--header-button-color:rgb(36,103,227)]"
+                    ? "[--header-color-main:rgb(255,255,255);--header-color-1:rgb(255,255,255);--header-bg:rgb(0,0,0,0.3);--header-button-color:rgb(36,103,227)] "
                     : headerTheme === "transparent" &&
                       "[--header-color-main:rgb(255,255,255);--header-color-1:rgb(255,255,255);--header-bg:transparent;--header-button-color:rgba(0,0,0,0.05)]"
-            } ${
-                showHeaderShadow &&
-                "shadow-[0px_0px_200px_rgba(0,0,0,0.2)] backdrop-blur-2xl"
             }  w-full py-[0.8rem] md:py-[1rem] px-[var(--x-padding)] fixed z-[6] flex items-center justify-between bg-[var(--header-bg)] transition-all duration-700`}
         >
             <div className="left w-[250px] flex items-center">
@@ -137,4 +131,6 @@ export default function Header() {
             </div>
         </header>
     );
-}
+};
+
+export default React.memo(Header);
