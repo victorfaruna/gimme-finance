@@ -51,7 +51,7 @@ const FAQ = () => {
                             <AccordionTrigger className="text-[0.9rem] lg:text-[1.5rem]">
                                 {item.question}
                             </AccordionTrigger>
-                            <AccordionContent className="text-[0.6rem] lg:text-[0.8rem]">
+                            <AccordionContent className="text-[0.75rem] lg:text-[0.8rem]">
                                 {item.answer}
                             </AccordionContent>
                         </AccordionItem>

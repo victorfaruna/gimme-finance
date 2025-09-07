@@ -40,7 +40,7 @@ const Concepts = () => {
     const prevRef = useRef<HTMLButtonElement | null>(null);
     const nextRef = useRef<HTMLButtonElement | null>(null);
     return (
-        <div className="w-screen drop-shadow-2xl overflow-hidden bg-color-main px-[1rem] py-[2rem] lg:px-[6rem] lg:py-[7rem] pb-[4.5rem] lg:pb-[10rem] flex flex-col lg:flex-row gap-10 items-center justify-between">
+        <div className="w-screen drop-shadow-2xl overflow-hidden bg-color-main px-[1rem] py-[2rem] lg:px-[6rem] lg:py-[7rem] pb-[4.5rem] lg:pb-[10rem] flex flex-col lg:flex-row gap-5 lg:gap-10 items-center justify-between">
             <div className="left flex flex-col gap-4">
                 <p className="w-full lg:w-[500px] text-[2rem] lg:text-[4rem] leading-none uppercase font-clash-display font-bold">
                     Enabling Cross Border Payments
@@ -87,7 +87,7 @@ const Concepts = () => {
                 </div>
             </div>
             <div className="right flex-[1] w-full lg:w-[80svw] relative">
-                <div className="absolute left-0 top-0 fader w-[100px] h-full bg-gradient-to-r from-color-main/70 via-color-main/20 to-transparent z-[2]"></div>
+                <div className="absolute left-0 top-0 fader  lg:w-[100px] h-full bg-gradient-to-r from-color-main/70 via-color-main/20 to-transparent z-[2]"></div>
                 <Swiper
                     ref={swiperRef}
                     spaceBetween={10}
